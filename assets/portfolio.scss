@@ -1242,3 +1242,182 @@ html {
   border-radius: 50%;
   margin-bottom: $spacing-md;
 }
+
+// ==========================================================================
+// JavaScript Integration Classes
+// ==========================================================================
+
+// Enhanced navigation active states for JavaScript
+.nav-item {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, $linkColor, $accentColor);
+    transition: width $transition-normal;
+  }
+
+  &:hover::after,
+  &.active::after {
+    width: 100%;
+  }
+}
+
+// Progress indicator
+.progress-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, $linkColor, $accentColor);
+  transition: width $transition-normal;
+  z-index: 1001;
+}
+
+// Back to top button
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background: $linkColor;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all $transition-normal;
+  z-index: 100;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    background: $linkColorHover;
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+// Enhanced footer with social links
+.site-footer {
+  border-top: 1px solid $borderColor;
+  margin-top: $spacing-3xl;
+  padding: $spacing-2xl 0;
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-lg;
+    text-align: center;
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: $spacing-md;
+      margin-bottom: $spacing-lg;
+
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: $borderColorLight;
+        border-radius: 50%;
+        color: $textColor;
+        text-decoration: none;
+        transition: all $transition-normal;
+
+        &:hover {
+          background: $linkColor;
+          color: white;
+          transform: translateY(-2px);
+          box-shadow: $shadow-md;
+        }
+      }
+    }
+
+    .footer-text {
+      color: $textColor;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+// Mobile navigation enhancements
+@media screen and (max-width: 48em) {
+  .site-nav__toggle {
+    display: block;
+    background: none;
+    border: none;
+    padding: $spacing-sm;
+    cursor: pointer;
+  }
+
+  .site-nav__links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: $siteBgColor;
+    border-bottom: 1px solid $borderColor;
+    flex-direction: column;
+    gap: 0;
+    padding: $spacing-md;
+    box-shadow: $shadow-md;
+
+    &.mobile-open {
+      display: flex;
+    }
+  }
+
+  .site-nav__link {
+    padding: $spacing-md 0;
+    border-bottom: 1px solid $borderColorLight;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+// Loading states for better UX
+.loading {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    animation: loading-shimmer 1.5s infinite;
+  }
+}
+
+@keyframes loading-shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}

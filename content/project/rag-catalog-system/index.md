@@ -24,16 +24,16 @@ tags:
 <div class="project-intro">
   <p class="text-large">Built a <strong>retrieval-augmented generation (RAG)</strong> system that revolutionized how businesses navigate complex product taxonomies in the Open Network for Digital Commerce (ONDC) ecosystem.</p>
 
-  <div class="project-highlights">
-    <div class="highlight-stat">
+  <div class="project-highlights scroll-reveal">
+    <div class="highlight-stat hover-lift">
       <span class="stat-number">99.95% faster</span>
       <span class="stat-label">Taxonomy search time</span>
     </div>
-    <div class="highlight-stat">
+    <div class="highlight-stat hover-lift">
       <span class="stat-number">95%</span>
       <span class="stat-label">Accuracy improvement</span>
     </div>
-    <div class="highlight-stat">
+    <div class="highlight-stat hover-lift">
       <span class="stat-number">10K+</span>
       <span class="stat-label">Businesses helped</span>
     </div>
