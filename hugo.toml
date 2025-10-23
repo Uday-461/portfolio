@@ -44,8 +44,13 @@ enableEmoji = true
   # poppy / sky / water / coffee
   theme = "paper"
 
-  textFontFamily = "sans-serif"
-  headingFontFamily = "sans-serif"
+  textFontFamily = "'Inter', system-ui, -apple-system, sans-serif"
+  headingFontFamily = "'Space Grotesk', system-ui, -apple-system, sans-serif"
+
+  # Custom theme styling
+  custom_theme = "portfolio"
+  customtextFontFamily = "Inter"
+  customheadingFontFamily = "Space Grotesk"
 
 [[params.social]]
     icon = "github"

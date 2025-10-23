@@ -17,9 +17,37 @@ tags:
   - OpenAI
 ---
 
-![](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop)
+<div class="project-hero">
+  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&auto=format" alt="AI System Architecture" class="enhanced-image w-100 db mb4 br2 rounded shadow-lg" data-tooltip="AI-powered catalog system architecture">
+</div>
 
-Built a **retrieval-augmented generation (RAG)** system that revolutionized how businesses navigate complex product taxonomies in the Open Network for Digital Commerce (ONDC) ecosystem.
+<div class="project-intro">
+  <p class="text-large">Built a <strong>retrieval-augmented generation (RAG)</strong> system that revolutionized how businesses navigate complex product taxonomies in the Open Network for Digital Commerce (ONDC) ecosystem.</p>
+
+  <div class="project-highlights">
+    <div class="highlight-stat card-3d">
+      <span class="stat-number gradient-text">99.95% faster</span>
+      <span class="stat-label">Taxonomy search time</span>
+      <div class="progress-bar mt3">
+        <div class="progress-fill" style="width: 99.95%"></div>
+      </div>
+    </div>
+    <div class="highlight-stat card-3d">
+      <span class="stat-number gradient-text">95%</span>
+      <span class="stat-label">Accuracy improvement</span>
+      <div class="progress-bar mt3">
+        <div class="progress-fill" style="width: 95%"></div>
+      </div>
+    </div>
+    <div class="highlight-stat card-3d">
+      <span class="stat-number gradient-text">10K+</span>
+      <span class="stat-label">Businesses helped</span>
+      <div class="progress-bar mt3">
+        <div class="progress-fill" style="width: 85%"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## The Challenge
 
@@ -52,10 +80,12 @@ I developed an intelligent RAG system that combines:
 
 ## Results
 
-⚡ **7-second average response time** (down from 3 hours)
-🎯 **95% accuracy** in category recommendations
-📈 **300% productivity boost** for catalog managers
-💡 **50+ small businesses** onboarded successfully
+<div class="enhanced-list">
+  <li><span class="badge badge--success">⚡</span> <strong>7-second average response time</strong> (down from 3 hours)</li>
+  <li><span class="badge badge--info">🎯</span> <strong>95% accuracy</strong> in category recommendations</li>
+  <li><span class="badge badge--warning">📈</span> <strong>300% productivity boost</strong> for catalog managers</li>
+  <li><span class="badge badge--success">💡</span> <strong>50+ small businesses</strong> onboarded successfully</li>
+</div>
 
 ## How It Works
 

@@ -1,0 +1,1182 @@
+---
+---
+// Custom Portfolio Theme Colors
+// Enhanced color palette following modern UI/UX best practices
+// ==========================================================================
+
+// Base Colors
+$siteBgColor: #ffffff;
+$sidebarBgColor: #f8fafb;
+$textColor: #374151;
+$headingColor: #111827;
+$linkColor: #2563eb;
+$linkColorHover: #1d4ed8;
+$codeColor: #1f2937;
+
+// Accent Colors
+$accentColor: #10b981;
+$accentColorLight: #34d399;
+$accentColorDark: #059669;
+
+// Neutral Colors for borders and backgrounds
+$borderColor: #e5e7eb;
+$borderColorLight: #f3f4f6;
+$highlightBgColor: #f0fdf4;
+$codeBgColor: #f9fafb;
+
+// Semantic Colors
+$successColor: #10b981;
+$warningColor: #f59e0b;
+$errorColor: #ef4444;
+$infoColor: #3b82f6;
+
+// Enhanced Typography
+$font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-family-serif: 'Space Grotesk', Georgia, 'Times New Roman', serif;
+$font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+
+// Enhanced Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 3rem;
+$spacing-3xl: 4rem;
+
+// Enhanced Border Radius
+$radius-sm: 0.25rem;
+$radius-md: 0.5rem;
+$radius-lg: 0.75rem;
+$radius-xl: 1rem;
+$radius-2xl: 1.5rem;
+
+// Enhanced Shadows
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+// Transitions
+$transition-fast: 150ms ease;
+$transition-normal: 250ms ease;
+$transition-slow: 350ms ease;
+
+// ==========================================================================
+// Enhanced Typography
+// ==========================================================================
+
+body {
+  font-family: $font-family-sans;
+  color: $textColor;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: $headingColor;
+  letter-spacing: -0.025em;
+}
+
+h1 { font-size: 2.5rem; margin: 2rem 0 1rem; }
+h2 { font-size: 2rem; margin: 1.75rem 0 0.75rem; }
+h3 { font-size: 1.5rem; margin: 1.5rem 0 0.5rem; }
+h4 { font-size: 1.25rem; margin: 1.25rem 0 0.5rem; }
+h5 { font-size: 1.125rem; margin: 1rem 0 0.5rem; }
+h6 { font-size: 1rem; margin: 1rem 0 0.5rem; }
+
+@media screen and (max-width: 60em) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 1.7;
+}
+
+a {
+  color: $linkColor;
+  text-decoration: none;
+  transition: color $transition-fast;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  color: $linkColorHover;
+  border-bottom-color: $linkColorHover;
+}
+
+// Enhanced Code Blocks
+code {
+  font-family: $font-family-mono;
+  background: $codeBgColor;
+  padding: 0.125rem 0.25rem;
+  border-radius: $radius-sm;
+  font-size: 0.875em;
+  color: $codeColor;
+}
+
+pre {
+  background: $headingColor;
+  color: $siteBgColor;
+  padding: $spacing-lg;
+  border-radius: $radius-lg;
+  overflow-x: auto;
+  margin: 1rem 0;
+
+  code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+}
+
+// Enhanced Blockquotes
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid $accentColor;
+  background: $highlightBgColor;
+  border-radius: 0 $radius-md $radius-md 0;
+  font-style: italic;
+}
+
+// ==========================================================================
+// Enhanced Navigation
+// ==========================================================================
+
+.site-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $borderColor;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-md $spacing-xl;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-nav__logo {
+  font-family: $font-family-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: $headingColor;
+  text-decoration: none;
+  transition: color $transition-fast;
+}
+
+.site-nav__logo:hover {
+  color: $linkColor;
+}
+
+.site-nav__links {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xl;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav__link {
+  position: relative;
+  font-weight: 500;
+  color: $textColor;
+  text-decoration: none;
+  padding: $spacing-sm 0;
+  transition: color $transition-fast;
+}
+
+.site-nav__link:hover {
+  color: $linkColor;
+}
+
+.site-nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: $linkColor;
+  transition: width $transition-normal;
+}
+
+.site-nav__link:hover::after,
+.site-nav__link.active::after {
+  width: 100%;
+}
+
+.site-nav__link.active {
+  color: $linkColor;
+}
+
+// ==========================================================================
+// Enhanced Content Cards
+// ==========================================================================
+
+.project-card,
+.post-card,
+.read-card {
+  background: $siteBgColor;
+  border: 1px solid $borderColor;
+  border-radius: $radius-lg;
+  padding: $spacing-xl;
+  transition: all $transition-normal;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover,
+.post-card:hover,
+.read-card:hover {
+  border-color: $borderColorLight;
+  box-shadow: $shadow-lg;
+  transform: translateY(-2px);
+}
+
+.card__header {
+  margin-bottom: $spacing-lg;
+}
+
+.card__title {
+  font-family: $font-family-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: $headingColor;
+  margin: 0 0 $spacing-sm;
+}
+
+.card__title a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.card__title a:hover {
+  color: $linkColor;
+}
+
+.card__subtitle {
+  color: $textColor;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card__content {
+  color: $textColor;
+  line-height: 1.6;
+}
+
+.card__footer {
+  margin-top: $spacing-lg;
+  padding-top: $spacing-lg;
+  border-top: 1px solid $borderColorLight;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card--featured {
+  border-color: $accentColor;
+  box-shadow: $shadow-md;
+}
+
+.card--featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: $accentColor;
+}
+
+// ==========================================================================
+// Enhanced Tags and Categories
+// ==========================================================================
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: $spacing-xs $spacing-sm;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: $textColor;
+  background: $borderColorLight;
+  border-radius: $radius-md;
+  text-decoration: none;
+  transition: all $transition-fast;
+  margin-right: $spacing-sm;
+  margin-bottom: $spacing-sm;
+}
+
+.tag:hover {
+  background: $borderColor;
+  color: $headingColor;
+  text-decoration: none;
+}
+
+.tag--primary {
+  background: $linkColor;
+  color: white;
+}
+
+.tag--primary:hover {
+  background: $linkColorHover;
+  color: white;
+  text-decoration: none;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  margin: $spacing-md 0;
+}
+
+// ==========================================================================
+// Enhanced Buttons
+// ==========================================================================
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-sm $spacing-lg;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: $radius-md;
+  cursor: pointer;
+  transition: all $transition-normal;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: $shadow-md;
+}
+
+.btn--primary {
+  background: $linkColor;
+  color: white;
+  border-color: $linkColor;
+}
+
+.btn--primary:hover {
+  background: $linkColorHover;
+  border-color: $linkColorHover;
+  color: white;
+}
+
+.btn--secondary {
+  background: $siteBgColor;
+  color: $textColor;
+  border-color: $borderColor;
+}
+
+.btn--secondary:hover {
+  background: $borderColorLight;
+  border-color: $borderColor;
+  color: $headingColor;
+}
+
+.btn--outline {
+  background: transparent;
+  color: $linkColor;
+  border-color: $linkColor;
+}
+
+.btn--outline:hover {
+  background: $linkColor;
+  color: white;
+}
+
+// ==========================================================================
+// Enhanced Layout Components
+// ==========================================================================
+
+.content-section {
+  padding: $spacing-3xl 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: $spacing-xl;
+  padding-right: $spacing-xl;
+}
+
+.content-section--tight {
+  padding: $spacing-2xl 0;
+}
+
+.content-section--narrow {
+  max-width: 800px;
+}
+
+.grid {
+  display: grid;
+  gap: $spacing-xl;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 64em) {
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .content-section {
+    padding-left: $spacing-md;
+    padding-right: $spacing-md;
+  }
+
+  .site-nav {
+    padding: $spacing-md;
+  }
+
+  .project-card,
+  .post-card,
+  .read-card {
+    padding: $spacing-lg;
+  }
+}
+
+// ==========================================================================
+// Enhanced Social Links
+// ==========================================================================
+
+.social-links {
+  display: flex;
+  gap: $spacing-md;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: $borderColorLight;
+  border-radius: 50%;
+  color: $textColor;
+  text-decoration: none;
+  transition: all $transition-fast;
+}
+
+.social-link:hover {
+  background: $linkColor;
+  color: white;
+  transform: translateY(-1px);
+}
+
+// ==========================================================================
+// Enhanced Animations
+// ==========================================================================
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out;
+}
+
+// ==========================================================================
+// Enhanced Accessibility
+// ==========================================================================
+
+:focus-visible {
+  outline: 2px solid $linkColor;
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: $linkColor;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: $radius-sm;
+  z-index: 1000;
+  transition: top $transition-fast;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+// ==========================================================================
+// Enhanced Project Page Layouts
+// ==========================================================================
+
+.project-hero {
+  text-align: center;
+  margin-bottom: $spacing-xl;
+}
+
+.project-hero img {
+  border-radius: $radius-xl;
+  box-shadow: $shadow-xl;
+}
+
+.project-intro {
+  max-width: 800px;
+  margin: 0 auto $spacing-xl;
+  text-align: center;
+}
+
+.project-highlights {
+  display: flex;
+  justify-content: space-around;
+  margin: $spacing-xl 0;
+  flex-wrap: wrap;
+  gap: $spacing-lg;
+}
+
+.highlight-stat {
+  text-align: center;
+  padding: $spacing-lg;
+  background: $highlightBgColor;
+  border-radius: $radius-lg;
+  border: 1px solid rgba(16, 185, 129, 0.1);
+  transition: all $transition-fast;
+  min-width: 120px;
+}
+
+.highlight-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: $shadow-md;
+}
+
+.stat-number {
+  display: block;
+  font-family: $font-family-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $accentColor;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: $textColor;
+  margin-top: $spacing-xs;
+}
+
+// Enhanced Section Styling
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  margin: $spacing-md 0;
+}
+
+.tech-stack-item {
+  background: $borderColorLight;
+  color: $textColor;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $radius-md;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: all $transition-fast;
+}
+
+.tech-stack-item:hover {
+  background: $borderColor;
+  color: $headingColor;
+}
+
+// Enhanced Metrics Section
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: $spacing-lg;
+  margin: $spacing-xl 0;
+}
+
+.metric-card {
+  background: $siteBgColor;
+  border: 1px solid $borderColor;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  text-align: center;
+  transition: all $transition-normal;
+}
+
+.metric-card:hover {
+  border-color: $accentColor;
+  box-shadow: $shadow-md;
+  transform: translateY(-2px);
+}
+
+.metric-value {
+  font-family: $font-family-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $headingColor;
+  margin-bottom: $spacing-xs;
+}
+
+.metric-label {
+  color: $textColor;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+// Enhanced Code Examples
+.code-example {
+  background: $headingColor;
+  color: $siteBgColor;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  overflow-x: auto;
+  margin: $spacing-lg 0;
+  position: relative;
+}
+
+.code-example::before {
+  content: attr(data-language);
+  position: absolute;
+  top: $spacing-sm;
+  right: $spacing-sm;
+  background: rgba(255, 255, 255, 0.1);
+  color: $siteBgColor;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $radius-sm;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.code-example pre {
+  margin: 0;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+// Enhanced Timeline
+.timeline {
+  position: relative;
+  margin: $spacing-xl 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: $borderColor;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: $spacing-3xl;
+  margin-bottom: $spacing-xl;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background: $accentColor;
+  border-radius: 50%;
+  border: 2px solid $siteBgColor;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.3);
+}
+
+.timeline-content {
+  background: $siteBgColor;
+  border: 1px solid $borderColor;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  box-shadow: $shadow-sm;
+}
+
+// Enhanced Lists
+.enhanced-list {
+  list-style: none;
+  padding: 0;
+  margin: $spacing-lg 0;
+}
+
+.enhanced-list li {
+  position: relative;
+  padding-left: $spacing-xl;
+  margin-bottom: $spacing-md;
+}
+
+.enhanced-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: $accentColor;
+  font-weight: bold;
+}
+
+// Enhanced Tables
+.enhanced-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: $spacing-lg 0;
+  background: $siteBgColor;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-sm;
+}
+
+.enhanced-table th,
+.enhanced-table td {
+  padding: $spacing-md;
+  text-align: left;
+  border-bottom: 1px solid $borderColor;
+}
+
+.enhanced-table th {
+  background: $borderColorLight;
+  font-weight: 600;
+  color: $headingColor;
+}
+
+.enhanced-table tr:last-child td {
+  border-bottom: none;
+}
+
+// Enhanced Alert/Notice Boxes
+.alert {
+  padding: $spacing-lg;
+  border-radius: $radius-lg;
+  margin: $spacing-lg 0;
+  border-left: 4px solid;
+}
+
+.alert--success {
+  background: rgba(16, 185, 129, 0.1);
+  border-left-color: $successColor;
+  color: darken($successColor, 20%);
+}
+
+.alert--info {
+  background: rgba(59, 130, 246, 0.1);
+  border-left-color: $infoColor;
+  color: darken($infoColor, 20%);
+}
+
+.alert--warning {
+  background: rgba(245, 158, 11, 0.1);
+  border-left-color: $warningColor;
+  color: darken($warningColor, 20%);
+}
+
+.alert--error {
+  background: rgba(239, 68, 68, 0.1);
+  border-left-color: $errorColor;
+  color: darken($errorColor, 20%);
+}
+
+// Enhanced Call-to-Action Sections
+.cta-section {
+  background: linear-gradient(135deg, $borderColorLight 0%, $siteBgColor 100%);
+  padding: $spacing-3xl 0;
+  text-align: center;
+  margin: $spacing-3xl 0;
+  border-radius: $radius-2xl;
+  border: 1px solid $borderColor;
+}
+
+.cta-section h2 {
+  margin-bottom: $spacing-lg;
+}
+
+.cta-section p {
+  max-width: 600px;
+  margin: 0 auto $spacing-xl;
+}
+
+// Enhanced Social Proof
+.testimonial {
+  background: $siteBgColor;
+  border: 1px solid $borderColor;
+  border-radius: $radius-lg;
+  padding: $spacing-xl;
+  margin: $spacing-lg 0;
+  box-shadow: $shadow-sm;
+}
+
+.testimonial-content {
+  font-style: italic;
+  color: $textColor;
+  margin-bottom: $spacing-md;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: $headingColor;
+}
+
+.testimonial-author .role {
+  font-weight: 400;
+  color: $textColor;
+  font-size: 0.875rem;
+}
+
+// Enhanced Navigation Pills
+.nav-pills {
+  display: flex;
+  gap: $spacing-sm;
+  margin: $spacing-lg 0;
+  flex-wrap: wrap;
+}
+
+.nav-pill {
+  padding: $spacing-sm $spacing-md;
+  background: $borderColorLight;
+  color: $textColor;
+  text-decoration: none;
+  border-radius: $radius-lg;
+  font-weight: 500;
+  transition: all $transition-fast;
+}
+
+.nav-pill:hover,
+.nav-pill.active {
+  background: $linkColor;
+  color: white;
+  text-decoration: none;
+}
+
+// Enhanced Loading States
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid $borderColor;
+  border-radius: 50%;
+  border-top-color: $linkColor;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+// ==========================================================================
+// Advanced Micro-interactions
+// ==========================================================================
+
+// Smooth scroll behavior
+html {
+  scroll-behavior: smooth;
+}
+
+// Enhanced image hover effects
+.enhanced-image {
+  transition: all $transition-normal;
+  cursor: pointer;
+}
+
+.enhanced-image:hover {
+  transform: scale(1.02);
+  box-shadow: $shadow-xl;
+}
+
+// Parallax scrolling effect
+.parallax {
+  transition: transform 0.1s ease-out;
+}
+
+// Enhanced form elements
+.form-input {
+  width: 100%;
+  padding: $spacing-md;
+  border: 2px solid $borderColor;
+  border-radius: $radius-md;
+  font-family: $font-family-sans;
+  font-size: 1rem;
+  transition: all $transition-fast;
+  background: $siteBgColor;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: $linkColor;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-input::placeholder {
+  color: $textColor;
+  opacity: 0.7;
+}
+
+// Enhanced progress bars
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: $borderColorLight;
+  border-radius: $radius-md;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, $accentColor, $accentColorLight);
+  border-radius: $radius-md;
+  transition: width $transition-slow;
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+// Enhanced badges and status indicators
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: $spacing-xs $spacing-sm;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: $radius-xl;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge--success {
+  background: rgba(16, 185, 129, 0.1);
+  color: $successColor;
+}
+
+.badge--warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: $warningColor;
+}
+
+.badge--error {
+  background: rgba(239, 68, 68, 0.1);
+  color: $errorColor;
+}
+
+.badge--info {
+  background: rgba(59, 130, 246, 0.1);
+  color: $infoColor;
+}
+
+// Enhanced hover cards with 3D effect
+.card-3d {
+  transition: all $transition-normal;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card-3d:hover {
+  transform: translateY(-8px) rotateX(2deg);
+  box-shadow: $shadow-xl;
+}
+
+// Gradient text effects
+.gradient-text {
+  background: linear-gradient(135deg, $linkColor, $accentColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+// Enhanced floating elements
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+// Pulse animation for call-to-action elements
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+
+// Enhanced tooltip styling
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $headingColor;
+  color: $siteBgColor;
+  padding: $spacing-sm;
+  border-radius: $radius-sm;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $transition-fast;
+  z-index: 1000;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: $headingColor;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $transition-fast;
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+// Enhanced search bar styling
+.search-container {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: $spacing-md $spacing-xl $spacing-md $spacing-lg;
+  border: 2px solid $borderColor;
+  border-radius: $radius-xl;
+  font-size: 1rem;
+  transition: all $transition-normal;
+  background: $siteBgColor;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: $linkColor;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+  right: $spacing-md;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $textColor;
+  opacity: 0.5;
+}
+
+// Enhanced skeleton loading states
+.skeleton {
+  background: linear-gradient(90deg, $borderColorLight 25%, $borderColor 50%, $borderColorLight 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: $radius-sm;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skeleton-text {
+  height: 1rem;
+  margin-bottom: $spacing-sm;
+}
+
+.skeleton-title {
+  height: 1.5rem;
+  width: 60%;
+  margin-bottom: $spacing-md;
+}
+
+.skeleton-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-bottom: $spacing-md;
+}
