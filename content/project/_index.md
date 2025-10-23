@@ -8,7 +8,7 @@ cascade:
     show_sidebar_adunit: false
     text_link_label: View all projects
     text_link_url: /project/
-description: AI systems and automation projects that solve real-world problems 🏗️
+description: AI systems and automation projects that solve real-world problems
 layout: list-grid
 show_author_byline: false
 show_button_links: false
@@ -16,7 +16,7 @@ show_post_date: true
 show_post_thumbnail: true
 sidebar:
   author: Uday
-  description: "AI systems and automation projects that solve real-world problems 🏗️"
+  description: "AI systems and automation projects that solve real-world problems"
   show_sidebar_adunit: false
   text_link_label: ""
   text_link_url: ""

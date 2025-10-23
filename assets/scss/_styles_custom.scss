@@ -12,6 +12,562 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
+/* ==========================================================================
+   Small Layout Improvements
+   ========================================================================== */
+
+/* Enhanced spacing for better readability */
+.content-section {
+  padding: var(--space-3xl) 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: var(--space-xl);
+  padding-right: var(--space-xl);
+}
+
+/* Improved card spacing and shadows */
+.card {
+  background: white;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+}
+
+.card:hover {
+  border-color: var(--color-gray-300);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* Better typography hierarchy */
+.prose h1, .prose h2, .prose h3 {
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-md);
+}
+
+.prose h1:first-child,
+.prose h2:first-child,
+.prose h3:first-child {
+  margin-top: 0;
+}
+
+/* Enhanced button styling */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-lg);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Improved navigation spacing */
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Better tag styling */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-gray-700);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.tag:hover {
+  background: var(--color-gray-200);
+  color: var(--color-gray-900);
+}
+
+/* ==========================================================================
+   Enhanced Layout Elements
+   ========================================================================== */
+
+/* Subtle hero section improvements */
+.hugo-hero {
+  text-align: center;
+  padding: var(--space-3xl) 0;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.hugo-hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hugo-hero__subtitle {
+  font-size: 1.25rem;
+  color: var(--color-gray-600);
+  margin-bottom: var(--space-xl);
+}
+
+/* Improved project card layout */
+.project-card,
+.post-card,
+.read-card {
+  background: white;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+}
+
+.project-card:hover,
+.post-card:hover,
+.read-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+/* Better content spacing */
+.prose {
+  max-width: none;
+  color: var(--color-gray-700);
+  line-height: 1.7;
+}
+
+.prose p {
+  margin: var(--space-md) 0;
+}
+
+.prose ul, .prose ol {
+  margin: var(--space-md) 0;
+  padding-left: var(--space-xl);
+}
+
+.prose li {
+  margin: var(--space-sm) 0;
+}
+
+/* Enhanced code blocks */
+.prose pre {
+  background: var(--color-gray-900);
+  color: var(--color-gray-100);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+  margin: var(--space-lg) 0;
+  border-left: 4px solid var(--color-primary);
+}
+
+.prose code {
+  background: var(--color-gray-100);
+  padding: 0.125rem 0.25rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  color: var(--color-gray-800);
+}
+
+/* Better blockquote styling */
+.prose blockquote {
+  margin: var(--space-lg) 0;
+  padding: var(--space-lg);
+  border-left: 4px solid var(--color-primary);
+  background: var(--color-gray-50);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--color-gray-700);
+}
+
+/* ==========================================================================
+   Small Interactive Enhancements
+   ========================================================================== */
+
+/* Enhanced navigation with better hover states */
+.site-nav__link {
+  position: relative;
+  font-weight: 500;
+  color: var(--color-gray-700);
+  text-decoration: none;
+  padding: var(--space-sm) 0;
+  transition: color var(--transition-fast);
+}
+
+.site-nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width var(--transition-normal);
+}
+
+.site-nav__link:hover::after,
+.site-nav__link.active::after {
+  width: 100%;
+}
+
+/* Subtle back-to-top button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: 100;
+  box-shadow: var(--shadow-md);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Enhanced social links */
+.social-links {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--color-gray-100);
+  border-radius: 50%;
+  color: var(--color-gray-600);
+  text-decoration: none;
+  transition: all var(--transition-normal);
+}
+
+.social-link:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ==========================================================================
+   Enhanced Reads Page Styling
+   ========================================================================== */
+
+/* Content type badges */
+.content-type-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
+}
+
+.content-type-badge--article {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--color-info);
+}
+
+.content-type-badge--video {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+}
+
+.content-type-badge--podcast {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--color-success);
+}
+
+.content-type-badge--social_post {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--color-primary);
+}
+
+.content-type-badge--book {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--color-warning);
+}
+
+/* External link styling */
+.external-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+  margin-top: var(--space-md);
+}
+
+.external-link:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.external-link::after {
+  content: '↗';
+  font-size: 0.875em;
+}
+
+/* Read metadata styling */
+.read-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin: var(--space-md) 0;
+  padding: var(--space-md);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  color: var(--color-gray-600);
+}
+
+.read-meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.read-meta-item::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
+/* Enhanced read cards */
+.read-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.read-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.read-card--external {
+  border-left: 4px solid var(--color-primary);
+}
+
+.read-card--external:hover {
+  border-left-color: var(--color-accent);
+}
+
+/* Platform-specific styling */
+.platform-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-gray-100);
+  color: var(--color-gray-700);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.platform-badge--youtube {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff0000;
+}
+
+.platform-badge--linkedin {
+  background: rgba(0, 119, 181, 0.1);
+  color: #0077b5;
+}
+
+.platform-badge--apple {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.platform-badge--spotify {
+  background: rgba(30, 215, 96, 0.1);
+  color: #1ed760;
+}
+
+/* Duration and reading time indicators */
+.time-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-gray-100);
+  color: var(--color-gray-600);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.time-indicator::before {
+  content: '⏱';
+}
+
+/* Enhanced grid layout for reads */
+.reads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-xl);
+  margin: var(--space-xl) 0;
+}
+
+@media (max-width: 768px) {
+  .reads-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+/* Simple reads page styling */
+.reads-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reads-list h2 {
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--color-gray-200);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.reads-list p {
+  margin-bottom: var(--space-xl);
+  line-height: 1.8;
+}
+
+.reads-list p strong {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-size: 1.125rem;
+}
+
+.reads-list p strong a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.reads-list p strong a:hover {
+  border-bottom-color: var(--color-primary);
+}
+
+.reads-list hr {
+  margin: var(--space-2xl) 0;
+  border: none;
+  border-top: 1px solid var(--color-gray-200);
+}
+
+/* Filter and search for reads */
+.reads-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-lg);
+}
+
+.filter-button {
+  padding: var(--space-sm) var(--space-md);
+  background: white;
+  color: var(--color-gray-700);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-button:hover {
+  background: var(--color-gray-100);
+  border-color: var(--color-gray-400);
+}
+
+.filter-button.active {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
 /* Custom Font Variables */
 :root {
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;

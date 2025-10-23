@@ -71,10 +71,10 @@ I developed an intelligent RAG system that combines:
 
 ## Results
 
-- ⚡ **7-second average response time** (down from 3 hours)
-- 🎯 **95% accuracy** in category recommendations
-- 📈 **300% productivity boost** for catalog managers
-- 💡 **50+ small businesses** onboarded successfully
+- **7-second average response time** (down from 3 hours)
+- **95% accuracy** in category recommendations
+- **300% productivity boost** for catalog managers
+- **50+ small businesses** onboarded successfully
 
 ## How It Works
 

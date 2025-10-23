@@ -26,7 +26,7 @@ Explores how complex, adaptive behaviors emerge from simple rules and interactio
 
 **Emergence** happens when simple components follow simple rules, creating complex collective behavior that's not present in any individual component.
 
-**Key insight:** We don't need to design complex systems—we need to design simple systems that can become complex.
+**Key insight:** We don't need to design complex systems-we need to design simple systems that can become complex.
 
 ## Examples of Emergence
 
@@ -46,7 +46,7 @@ Explores how complex, adaptive behaviors emerge from simple rules and interactio
 
 ### 1. Simple Rules, Complex Outcomes
 
-Don't specify behaviors—specify rules that generate behaviors.
+Don't specify behaviors-specify rules that generate behaviors.
 
 ```javascript
 // Don't do this: Complex traffic management

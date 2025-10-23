@@ -52,7 +52,7 @@ graph TD
 
 ## Key Features
 
-### 🧠 Natural Language Understanding
+### Natural Language Understanding
 Researchers can describe their goals in plain English:
 - "Predict patient readmission risk using lab values"
 - "Classify tumor types from MRI scans"

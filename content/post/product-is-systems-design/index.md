@@ -19,7 +19,7 @@ tags:
 
 ![](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop)
 
-I spent years building products by adding features. More features, more value—right? Wrong.
+I spent years building products by adding features. More features, more value-right? Wrong.
 
 The breakthrough came when I stopped thinking about products as collections of features and started seeing them as **complex systems**. Everything changed.
 
@@ -57,7 +57,7 @@ I was building an AI tool for medical researchers. My approach was:
 
 Systems thinking is the ability to understand how components interact to create emergent behavior.
 
-> "The whole is greater than the sum of its parts" — Aristotle
+> "The whole is greater than the sum of its parts" - Aristotle
 
 In product terms: **Features create value, but systems create impact.**
 
@@ -110,7 +110,7 @@ Then I built systems to support the entire workflow:
 - Time-to-result decreased 60%
 - Collaboration increased 500%
 
-The magic wasn't in individual features—it was in how they worked together as a system.
+The magic wasn't in individual features-it was in how they worked together as a system.
 
 ## Systems Principles for Product Building
 
@@ -144,7 +144,7 @@ def understand_system():
 
 Great products create conditions for desired behaviors to emerge naturally.
 
-**Example:** Slack's productivity wasn't designed—it emerged from the interaction of messaging, integrations, and search.
+**Example:** Slack's productivity wasn't designed-it emerged from the interaction of messaging, integrations, and search.
 
 ```javascript
 // Instead of controlling user behavior
@@ -234,12 +234,12 @@ Instead of adding features, remove constraints:
 ```python
 # Instead of adding a "recommendation" feature
 def add_recommendation_feature():
-    # ❌ This adds complexity
+    # X This adds complexity
     implement_ml_recommendation_engine()
 
 # Remove the constraint that prevents natural discovery
 def remove_discovery_constraints():
-    # ✅ This enables emergent behavior
+    # ✓ This enables emergent behavior
     improve_search_relevance()
     enhance_social_proof()
     optimize_navigation_flow()
@@ -382,7 +382,7 @@ As products become more interconnected and AI-driven, systems thinking becomes e
 
 ### AI as System Component
 
-AI isn't just a feature—it's a system component that changes everything:
+AI isn't just a feature-it's a system component that changes everything:
 
 ```
 Traditional: [User Interface] → [Backend] → [Database]

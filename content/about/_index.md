@@ -10,20 +10,20 @@ I build AI systems that solve real problems, write about ideas that matter, and 
 
 ---
 
-## 🎯 What I Do
+## What I Do
 
 I'm an **AI Engineer** focused on applied artificial intelligence, automation, and systems thinking. I transform complex challenges into elegant, practical solutions that help people work more efficiently and effectively.
 
 ### Core Expertise
 
-- **🤖 Applied AI Systems**: Building practical AI tools that deliver measurable value
-- **🔄 Automation & Efficiency**: Creating systems that eliminate tedious work and accelerate workflows
-- **🧠 Systems Thinking**: Understanding how components interact to create emergent behavior
-- **✍️ Technical Writing**: Sharing insights about AI, technology, and the future of work
+- **Applied AI Systems**: Building practical AI tools that deliver measurable value
+- **Automation & Efficiency**: Creating systems that eliminate tedious work and accelerate workflows
+- **Systems Thinking**: Understanding how components interact to create emergent behavior
+- **Technical Writing**: Sharing insights about AI, technology, and the future of work
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
 ### RAG-based Catalog System
 **Reduced complex taxonomy search from 3 hours to 7 seconds**
@@ -48,7 +48,7 @@ Developed a flexible platform combining modern LLMs with robust backend infrastr
 
 ---
 
-## 📚 Recent Writing
+## Recent Writing
 
 ### How I Built an AI System That Understood ONDC Taxonomy
 *A deep dive into building RAG systems that reduce search time from hours to seconds*
@@ -73,7 +73,7 @@ Reflections on why successful AI applications thoughtfully integrate human exper
 
 ---
 
-## 🧠 Current Reading
+## Current Reading
 
 Essential ideas shaping my thinking about AI and technology:
 
@@ -91,7 +91,7 @@ Essential ideas shaping my thinking about AI and technology:
 
 ---
 
-## 💬 Let's Connect
+## Let's Connect
 
 I'm always interested in connecting with fellow builders, thinkers, and organizations working on interesting problems at the intersection of AI, systems design, and human-centered technology.
 
@@ -102,15 +102,15 @@ I'm always interested in connecting with fellow builders, thinkers, and organiza
 - **Systems Architecture**: Designing scalable, adaptable technical solutions
 
 ### Get in Touch
-- **📧 Email**: [uday@example.com](mailto:uday@example.com)
-- **💻 GitHub**: [github.com/Uday-461](https://github.com/Uday-461)
-- **💼 LinkedIn**: [linkedin.com/in/uday](https://linkedin.com/in/uday)
+- **Email**: [uday@example.com](mailto:uday@example.com)
+- **GitHub**: [github.com/Uday-461](https://github.com/Uday-461)
+- **LinkedIn**: [linkedin.com/in/uday](https://linkedin.com/in/uday)
 
 ---
 
 ### Explore Further
 
-**🛠️ [Projects](/project/)** - Detailed implementations and case studies
-**📝 [Blog](/post/)** - Thoughts on AI, systems, and technology
-**📚 [Reads](/reads/)** - Curated articles and papers
-**📋 [CV](/cv/)** - Complete background and experience
+**[Projects](/project/)** - Detailed implementations and case studies  
+**[Blog](/post/)** - Thoughts on AI, systems, and technology  
+**[Reads](/reads/)** - Curated articles and papers  
+**[CV](/cv/)** - Complete background and experience

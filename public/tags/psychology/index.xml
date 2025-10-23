@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Psychology on Uday | Portfolio</title>
-    <link>http://localhost:1313/portfolio/tags/psychology/</link>
+    <link>http://localhost:1314/tags/psychology/</link>
     <description>Recent content in Psychology on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Jan 1989 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/portfolio/tags/psychology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/psychology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Situated Cognition</title>
-      <link>http://localhost:1313/portfolio/reads/situated-cognition/</link>
+      <link>http://localhost:1314/reads/situated-cognition/</link>
       <pubDate>Sun, 01 Jan 1989 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/reads/situated-cognition/</guid>
+      <guid>http://localhost:1314/reads/situated-cognition/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&amp;amp;h=400&amp;amp;fit=crop&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;A landmark paper on how learning and knowing are fundamentally tied to context and activity. Crucial for understanding the limitations of decontextualized AI systems.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;the-core-argument&#34;&gt;The Core Argument&#xA;  &lt;a href=&#34;#the-core-argument&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; aria-hidden=&#34;true&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&#xA;      &lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&#xA;      &lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;&#xA;    &lt;/svg&gt;&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Traditional views treat knowledge as:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Abstract&lt;/strong&gt;: Independent of context&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Transferable&lt;/strong&gt;: Easily applied across situations&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Individual&lt;/strong&gt;: Existing in individual minds&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Situated cognition argues that knowledge is:&lt;/p&gt;</description>
     </item>
   </channel>

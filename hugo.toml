@@ -40,7 +40,7 @@ enableEmoji = true
   navallcaps = true
   socialInHeader = false
   socialInFooter = true
-  sharing_image = "/img/papillons.jpg"
+  sharing_image = "/img/uday_linkedin.jpeg"
   twitter = ""
 
   # use a built-in color theme
@@ -63,7 +63,7 @@ enableEmoji = true
 [[params.social]]
     icon = "linkedin"
     icon_pack = "fab"
-    url = ""
+    url = "https://www.linkedin.com/in/uday-dahiya-59001113b/"
 
 # Configure header menu for centered navigation
 [[menu.header]]

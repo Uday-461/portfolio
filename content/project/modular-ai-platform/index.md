@@ -159,7 +159,7 @@ async def generate_text(
 
 ## Advanced Features
 
-### 🚀 Smart Load Balancing
+### Smart Load Balancing
 - **Dynamic model selection** based on availability and cost
 - **Automatic failover** between model providers
 - **Intelligent caching** for common queries
@@ -202,7 +202,7 @@ class AnalyticsService {
 - **Audit logging** for compliance
 - **Content filtering** and moderation
 
-### ⚡ Performance Optimization
+### Performance Optimization
 - **Connection pooling** for database queries
 - **Async processing** for long-running tasks
 - **CDN integration** for static assets

@@ -8,7 +8,7 @@ cascade:
     show_sidebar_adunit: false
     text_link_label: View all posts
     text_link_url: /post/
-description: Thoughts and essays about AI, systems design, and the future of technology 🤖
+description: Thoughts and essays about AI, systems design, and the future of technology
 layout: list
 show_author_byline: false
 show_button_links: false
@@ -16,7 +16,7 @@ show_post_date: true
 show_post_thumbnail: true
 sidebar:
   author: Uday
-  description: "Thoughts and essays about AI, systems design, and the future of technology 🤖"
+  description: "Thoughts and essays about AI, systems design, and the future of technology"
   show_sidebar_adunit: false
   text_link_label: ""
   text_link_url: ""

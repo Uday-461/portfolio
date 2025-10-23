@@ -5,7 +5,7 @@ action_type: text
 description: AI Engineer building intelligent systems that solve real-world problems. I write about emerging technology, share practical insights, and explore the intersection of human creativity and artificial intelligence.
 image_left: true
 images:
-- img/papillons.jpg
+- img/uday_linkedin.jpeg
 show_action_link: true
 show_social_links: true
 subtitle: AI Engineer • Systems Thinker • Writer

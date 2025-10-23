@@ -38,11 +38,11 @@ Situated cognition argues that knowledge is:
 
 ### 1. Knowledge as Tool
 
-Knowledge isn't something we have—it's something we use.
+Knowledge isn't something we have-it's something we use.
 
 > "Knowing is not a matter of possessing a set of abstract propositions, but rather a capability for interacting with the world."
 
-**Example:** A mechanic doesn't just "know" about engines—they can diagnose and fix them in specific situations.
+**Example:** A mechanic doesn't just "know" about engines-they can diagnose and fix them in specific situations.
 
 ### 2. Learning as Participation
 

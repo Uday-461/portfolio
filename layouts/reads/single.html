@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main class="page-main pa4" role="main">
+  <section class="page-content mw8 center reads-list">
+    <header class="page-header tc mb5">
+      <h1 class="f2 f1-ns lh-solid fw4 mb3">{{ .Title | markdownify }}</h1>
+      {{ with .Description }}
+        <p class="f5 lh-copy measure center gray">{{ . | markdownify }}</p>
+      {{ end }}
+    </header>
+    
+    <article class="page-body lh-copy">
+      {{ .Content }}
+    </article>
+  </section>
+</main>
+{{ end }}
+

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Healthcare on Uday | Portfolio</title>
-    <link>http://localhost:1313/portfolio/categories/healthcare/</link>
+    <link>http://localhost:1314/categories/healthcare/</link>
     <description>Recent content in Healthcare on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/portfolio/categories/healthcare/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/categories/healthcare/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Research Agent for Medical ML</title>
-      <link>http://localhost:1313/portfolio/project/ai-research-agent/</link>
+      <link>http://localhost:1314/project/ai-research-agent/</link>
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/project/ai-research-agent/</guid>
+      <guid>http://localhost:1314/project/ai-research-agent/</guid>
       <description>Created an intelligent agent that helps doctors and researchers automatically generate, test, and validate machine learning pipelines for their specific research needs.</description>
     </item>
   </channel>

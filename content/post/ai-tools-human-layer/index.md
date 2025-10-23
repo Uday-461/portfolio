@@ -229,7 +229,7 @@ graph TD
 
 ### 1. GitHub Copilot
 
-**Why it works:** It doesn't write entire applications—it suggests code that developers can accept, reject, or modify.
+**Why it works:** It doesn't write entire applications-it suggests code that developers can accept, reject, or modify.
 
 ```javascript
 // Developer writes:
@@ -239,14 +239,14 @@ function calculateTotal(items) {
 }
 
 // Developer can:
-// ✅ Accept suggestion
-// ❌ Reject suggestion
-// 🔄 Modify suggestion
+// Accept suggestion
+// Reject suggestion
+// Modify suggestion
 ```
 
 ### 2. Grammarly
 
-**Why it works:** It doesn't rewrite documents—it highlights potential improvements and lets writers decide.
+**Why it works:** It doesn't rewrite documents-it highlights potential improvements and lets writers decide.
 
 ```python
 class GrammarlyStyle:
@@ -321,11 +321,11 @@ class AdaptiveAI:
 ### 1. The "Replace Human" Fallacy
 
 ```python
-# ❌ Trying to completely automate
+# X Trying to completely automate
 def fully_automated_system():
     return "I'll handle everything, human not needed"
 
-# ✅ Augmenting human capabilities
+# ✓ Augmenting human capabilities
 def augmented_system():
     return "Here are suggestions to help you work better"
 ```
@@ -333,11 +333,11 @@ def augmented_system():
 ### 2. The "Black Box" Problem
 
 ```python
-# ❌ No explanation of reasoning
+# X No explanation of reasoning
 def black_box_ai(input_data):
     return "The answer is 42"
 
-# ✅ Transparent reasoning
+# ✓ Transparent reasoning
 def explainable_ai(input_data):
     reasoning = analyze(input_data)
     confidence = calculate_confidence(reasoning)
@@ -354,11 +354,11 @@ def explainable_ai(input_data):
 ### 3. The "One Size Fits All" Error
 
 ```python
-# ❌ Same interface for all users
+# X Same interface for all users
 def generic_interface():
     return "Here's your AI tool, good luck"
 
-# ✅ Adaptive to user expertise
+# ✓ Adaptive to user expertise
 def adaptive_interface(user_skill_level):
     if user_skill_level == "expert":
         return AdvancedInterface()
@@ -440,4 +440,4 @@ Build for the human layer. Everything else will follow.
 
 ---
 
-*The best AI systems don't replace human intelligence—they amplify it.*
+*The best AI systems don't replace human intelligence-they amplify it.*

@@ -25,7 +25,7 @@ Here's how I built a retrieval-augmented generation (RAG) system that transforme
 
 ## The Problem: A Taxonomy Nightmare
 
-The ONDC taxonomy isn't just complex—it's a labyrinth of nested categories, specific requirements, and evolving standards. For a small business owner selling handmade products, finding the right category feels like:
+The ONDC taxonomy isn't just complex-it's a labyrinth of nested categories, specific requirements, and evolving standards. For a small business owner selling handmade products, finding the right category feels like:
 
 > "I have organic honey from Uttarakhand. Is it under 'Food Products > Honey > Organic' or 'Agricultural Products > Beekeeping > Natural Honey'? And what documentation do I need?"
 
@@ -33,7 +33,7 @@ The ONDC taxonomy isn't just complex—it's a labyrinth of nested categories, sp
 - 3,000+ product categories with 10+ levels of nesting
 - Constantly evolving requirements and regulations
 - Different compliance needs for different categories
-- No search interface—only manual browsing
+- No search interface-only manual browsing
 
 ## Initial Approaches That Failed
 
@@ -471,9 +471,9 @@ class ProductionRAGSystem:
 
 ## Conclusion
 
-Building this RAG system taught me that the most effective AI applications aren't about having the biggest models or the most sophisticated algorithms—they're about understanding real user problems and solving them practically.
+Building this RAG system taught me that the most effective AI applications aren't about having the biggest models or the most sophisticated algorithms-they're about understanding real user problems and solving them practically.
 
-By combining semantic search with grounded generation, we transformed a complex, frustrating process into something that just works. Small businesses can now focus on what they do best—running their business—instead of navigating bureaucratic taxonomies.
+By combining semantic search with grounded generation, we transformed a complex, frustrating process into something that just works. Small businesses can now focus on what they do best-running their business-instead of navigating bureaucratic taxonomies.
 
 The key insight: **Sometimes the best AI systems don't replace human expertise, they make human expertise accessible to everyone.**
 

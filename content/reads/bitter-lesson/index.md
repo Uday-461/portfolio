@@ -50,7 +50,7 @@ Sutton demonstrates how repeatedly, AI advances have favored approaches that sca
 ## Critical Reflections
 
 ### What I Found Challenging
-At first, this thesis seems to dismiss the value of human expertise entirely. But Sutton isn't arguing against human insight—he's arguing against approaches that don't scale.
+At first, this thesis seems to dismiss the value of human expertise entirely. But Sutton isn't arguing against human insight-he's arguing against approaches that don't scale.
 
 ### The Nuance Missing
 The bitter lesson doesn't mean human expertise is worthless. It means human expertise that doesn't scale is limited. The sweet spot is often human-guided search that leverages computation.
