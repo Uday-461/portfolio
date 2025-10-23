@@ -1,0 +1,103 @@
+baseURL = 'https://uday-461.github.io/portfolio/'
+theme = "hugo-apero"
+languageCode = "en-us"
+title = "Uday | Portfolio"
+author = "Uday"
+copyright = ""
+metaDataFormat = "yaml"
+footnoteReturnLinkContents = "&#8617;"
+
+[pagination]
+  pagerSize = 10
+
+preserveTaxonomyNames = true
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+enableEmoji = true
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark.renderer]
+    unsafe = true
+    hardwraps = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+  [markup.highlight]
+    style = "github"
+
+[params]
+  orgName = ""
+  orgLocal = ""
+  description = "AI Engineer exploring applied AI, automation & systems thinking."
+  favicon = "/img/favicon.ico"
+  logo = ""
+  mainSections = ["project", "post", "reads"]
+  navallcaps = true
+  socialInHeader = false
+  socialInFooter = true
+  sharing_image = "/img/papillons.jpg"
+  twitter = ""
+
+  # use a built-in color theme
+  # one of: earth / forest / grayscale / magma / paper / peach / plum /
+  # poppy / sky / water / coffee
+  theme = "forest"
+
+  # custom fonts
+  textFontFamily = "'Inter', system-ui, -apple-system, sans-serif"
+  headingFontFamily = "'Inter', system-ui, -apple-system, sans-serif"
+
+  # --- left/footer sidebar menu --- #
+  title = "Uday"
+
+  # a logo or avatar shown in the sidebar menu
+  # avatar = "img/avatar.jpg"
+
+  # set to false to hide the navigation icons in the sidebar
+  show_nav_icons = true
+
+  # show/hide a contact link in the sidebar
+  show_contact_links = true
+
+  # show/hide the RSS feed icon in the sidebar
+  show_rss_icon = false
+
+[[params.social]]
+    icon = "github"
+    icon_pack = "fab"
+    url = "https://github.com/Uday-461"
+[[params.social]]
+    icon = "linkedin"
+    icon_pack = "fab"
+    url = ""
+
+# Configure the main menu
+[[menu.main]]
+  name = "Projects"
+  url = "/project/"
+  weight = 10
+[[menu.main]]
+  name = "Blog"
+  url = "/post/"
+  weight = 20
+[[menu.main]]
+  name = "Reads"
+  url = "/reads/"
+  weight = 30
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 40
+
+# Taxonomies for organizing content
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Site outputs
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]

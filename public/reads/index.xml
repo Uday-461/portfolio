@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reads on Uday | Portfolio</title>
+    <link>https://uday-461.github.io/portfolio/reads/</link>
+    <description>Recent content in Reads on Uday | Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://uday-461.github.io/portfolio/reads/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
