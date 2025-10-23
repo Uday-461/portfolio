@@ -170,10 +170,16 @@
     <loc>http://localhost:1313/portfolio/tags/architecture/</loc>
     <lastmod>2022-03-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/portfolio/reads/building-for-emergence/</loc>
+    <lastmod>2022-03-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/portfolio/categories/design/</loc>
     <lastmod>2022-03-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/portfolio/tags/design/</loc>
+    <lastmod>2022-03-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/portfolio/reads/</loc>
     <lastmod>2022-03-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/portfolio/categories/digital-gardens/</loc>
@@ -200,7 +206,13 @@
     <loc>http://localhost:1313/portfolio/tags/research/</loc>
     <lastmod>2019-03-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/portfolio/reads/bitter-lesson/</loc>
+    <lastmod>2019-03-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/portfolio/categories/complexity/</loc>
+    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/portfolio/reads/design-for-emergence/</loc>
     <lastmod>2016-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/portfolio/tags/technology/</loc>
@@ -225,6 +237,9 @@
     <lastmod>1989-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/portfolio/tags/psychology/</loc>
+    <lastmod>1989-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/portfolio/reads/situated-cognition/</loc>
     <lastmod>1989-01-01T00:00:00+00:00</lastmod>
   </url>
 </urlset>
