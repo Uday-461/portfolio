@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Uday | Portfolio</title>
-    <link>https://uday-461.github.io/portfolio/project/</link>
-    <description>Recent content in Projects on Uday | Portfolio</description>
+    <title>A Project Portfolio To Grow on Uday | Portfolio</title>
+    <link>http://localhost:1313/portfolio/project/</link>
+    <description>Recent content in A Project Portfolio To Grow on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://uday-461.github.io/portfolio/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/portfolio/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAG-based Catalog System for ONDC</title>
+      <link>http://localhost:1313/portfolio/project/rag-catalog-system/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/project/rag-catalog-system/</guid>
+      <description>Built a retrieval-augmented generation system that understands complex product taxonomies and delivers instant, accurate results for e-commerce catalog management.</description>
+    </item>
+    <item>
+      <title>AI Research Agent for Medical ML</title>
+      <link>http://localhost:1313/portfolio/project/ai-research-agent/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/project/ai-research-agent/</guid>
+      <description>Created an intelligent agent that helps doctors and researchers automatically generate, test, and validate machine learning pipelines for their specific research needs.</description>
+    </item>
+    <item>
+      <title>Modular AI Platform with Supabase &amp; Hugging Face</title>
+      <link>http://localhost:1313/portfolio/project/modular-ai-platform/</link>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/project/modular-ai-platform/</guid>
+      <description>Developed a flexible, modular platform that combines the power of modern LLMs with robust backend infrastructure, enabling rapid prototyping and deployment of AI applications.</description>
+    </item>
   </channel>
 </rss>

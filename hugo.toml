@@ -1,4 +1,4 @@
-baseURL = 'https://uday-461.github.io/portfolio/'
+baseURL = 'http://localhost:1313/portfolio/'
 theme = "hugo-apero"
 languageCode = "en-us"
 title = "Uday | Portfolio"
@@ -42,26 +42,10 @@ enableEmoji = true
   # use a built-in color theme
   # one of: earth / forest / grayscale / magma / paper / peach / plum /
   # poppy / sky / water / coffee
-  theme = "forest"
+  theme = "paper"
 
-  # custom fonts
-  textFontFamily = "'Inter', system-ui, -apple-system, sans-serif"
-  headingFontFamily = "'Inter', system-ui, -apple-system, sans-serif"
-
-  # --- left/footer sidebar menu --- #
-  title = "Uday"
-
-  # a logo or avatar shown in the sidebar menu
-  # avatar = "img/avatar.jpg"
-
-  # set to false to hide the navigation icons in the sidebar
-  show_nav_icons = true
-
-  # show/hide a contact link in the sidebar
-  show_contact_links = true
-
-  # show/hide the RSS feed icon in the sidebar
-  show_rss_icon = false
+  textFontFamily = "sans-serif"
+  headingFontFamily = "sans-serif"
 
 [[params.social]]
     icon = "github"
@@ -72,23 +56,39 @@ enableEmoji = true
     icon_pack = "fab"
     url = ""
 
-# Configure the main menu
-[[menu.main]]
+# Configure header menu for centered navigation
+[[menu.header]]
+  name = "Home"
+  title = "Home"
+  url = "/"
+  weight = 1
+[[menu.header]]
   name = "Projects"
+  title = "Projects"
   url = "/project/"
-  weight = 10
-[[menu.main]]
-  name = "Blog"
-  url = "/post/"
-  weight = 20
-[[menu.main]]
+  weight = 2
+[[menu.header]]
   name = "Reads"
+  title = "Reads"
   url = "/reads/"
-  weight = 30
-[[menu.main]]
-  name = "Contact"
-  url = "/contact/"
-  weight = 40
+  weight = 3
+[[menu.header]]
+  name = "CV"
+  title = "CV"
+  url = "/cv/"
+  weight = 4
+[[menu.header]]
+  name = "Blog"
+  title = "Blog"
+  url = "/post/"
+  weight = 5
+
+# Configure footer menu if needed
+[[menu.footer]]
+  name = "GitHub"
+  title = "GitHub"
+  url = "https://github.com/Uday-461"
+  weight = 1
 
 # Taxonomies for organizing content
 [taxonomies]

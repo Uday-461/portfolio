@@ -1,41 +1,27 @@
 ---
-title: "Reads"
-date: 2024-01-01T00:00:00Z
-draft: false
+author: Uday
+cascade:
+  show_author_byline: true
+  show_comments: false
+  show_post_date: true
+  sidebar:
+    show_sidebar_adunit: false
+    text_link_label: View all reads
+    text_link_url: /reads/
+description: A digital bookshelf of articles, papers, and ideas that have shaped my thinking 📚
+layout: list
+show_author_byline: false
+show_button_links: false
+show_post_date: true
+show_post_thumbnail: true
+sidebar:
+  author: Uday
+  description: "A digital bookshelf of articles, papers, and ideas that have shaped my thinking 📚"
+  show_sidebar_adunit: false
+  text_link_label: ""
+  text_link_url: ""
+  title: Digital Bookshelf
+title: Digital Bookshelf
 ---
 
-# Reads
-
-A digital bookshelf of articles, papers, and ideas that have shaped my thinking about AI, systems, and technology.
-
----
-
-## Essential Reading
-
-### "The Bitter Lesson" – Rich Sutton
-**Why it matters**: Learning > Logic
-
-A foundational essay about why the most effective AI methods ultimately leverage computation and search rather than human-crafted knowledge. Essential for understanding the trajectory of AI progress.
-
-**Tags**: #AI #MachineLearning #Philosophy
-
-### "Building for Emergence" – Maggie Appleton
-**Why it matters**: Organic design
-
-Explores how we can design systems that evolve and adapt over time, rather than trying to specify every behavior upfront. Critical thinking for anyone building complex digital systems.
-
-**Tags**: #Design #SystemsThinking #Emergence
-
-### "Situated Cognition" – Brown, Collins & Duguid
-**Why it matters**: Knowledge is contextual
-
-A landmark paper on how learning and knowing are fundamentally tied to context and activity. Crucial for understanding the limitations of decontextualized AI systems.
-
-**Tags**: #Cognition #Learning #Context
-
-### "Design for Emergence" – Kevin Kelly
-**Why it matters**: Systems > Parts
-
-Explores how complex, adaptive behaviors emerge from simple rules and interactions. Fundamental for understanding both natural and artificial systems.
-
-**Tags**: #SystemsThinking #Complexity #Emergence
+** No content for the reads index. This file provides front matter for the blog including the layout and boolean options. **

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr"><head><script src="/portfolio/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=portfolio/livereload" data-no-instant defer></script>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.152.1">
+<title>RAG-based Catalog System for ONDC | Uday | Portfolio</title>
+
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="Reducing taxonomy search from 3 hours to 7 seconds with AI">
+
+
+<meta property="og:site_name" content="Uday | Portfolio">
+<meta property="og:title" content="RAG-based Catalog System for ONDC | Uday | Portfolio">
+<meta property="og:description" content="Reducing taxonomy search from 3 hours to 7 seconds with AI" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="http://localhost:1313/portfolio/project/rag-catalog-system/" />
+<meta property="og:locale" content="en-us">
+
+
+
+
+    
+        <meta property="og:image" content="http://localhost:1313/img/papillons.jpg" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="http://localhost:1313/img/papillons.jpg" >
+    
+  
+  <meta itemprop="name" content="RAG-based Catalog System for ONDC">
+  <meta itemprop="description" content="Built a retrieval-augmented generation system that understands complex product taxonomies and delivers instant, accurate results for e-commerce catalog management.">
+  <meta itemprop="datePublished" content="2023-11-15T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2023-11-15T00:00:00+00:00">
+  <meta itemprop="wordCount" content="434">
+  <meta itemprop="keywords" content="RAG,LangChain,Vector Databases,OpenAI">
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/portfolio/style.main.min.a95441caef79de42cf39e9414e5c6af9b8e91c508887dbc5f7ccbd860859d81f.css" integrity="sha256-qVRByu953kLPOelBTlxq&#43;bjpHFCIh9vF98y9hghZ2B8=" media="screen">
+  
+  
+  <script src="/portfolio/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/portfolio/main.min.0e7b433270c60db9a67360cb1021a0150e82eb7384d60ccf578be2e68d1d8676.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="http://localhost:1313/portfolio/" title="Home">
+      <span class="f4 fw7">Uday | Portfolio</span>
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/portfolio/" title="Home">Home</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/portfolio/project/" title="Projects">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/portfolio/reads/" title="Reads">Reads</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/portfolio/cv/" title="CV">CV</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/portfolio/post/" title="Blog">Blog</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">RAG-based Catalog System for ONDC</h1>
+        <h4 class="f4 mt0 mb4 lh-title measure">Reducing taxonomy search from 3 hours to 7 seconds with AI</h4>
+        <p class="f6 measure lh-copy mv1">By Uday in <a href="http://localhost:1313/portfolio/categories/ai">AI</a>  <a href="http://localhost:1313/portfolio/categories/machine-learning">Machine Learning</a>  <a href="http://localhost:1313/portfolio/categories/nlp">NLP</a>  <a href="http://localhost:1313/portfolio/categories/e-commerce">E-commerce</a> </p>
+        <p class="f7 db mv0 ttu">November 15, 2023</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        <p><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&amp;h=400&amp;fit=crop" alt=""></p>
+<p>Built a <strong>retrieval-augmented generation (RAG)</strong> system that revolutionized how businesses navigate complex product taxonomies in the Open Network for Digital Commerce (ONDC) ecosystem.</p>
+
+
+
+
+<h2 id="the-challenge">The Challenge
+  <a href="#the-challenge"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>The ONDC taxonomy contains thousands of product categories and subcategories, making it incredibly difficult for small businesses to:</p>
+<ul>
+<li>Find the right category for their products</li>
+<li>Understand classification requirements</li>
+<li>Ensure compliance with catalog standards</li>
+</ul>
+<p><strong>Manual search time</strong>: ~3 hours per product catalog</p>
+
+
+
+
+<h2 id="the-solution">The Solution
+  <a href="#the-solution"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>I developed an intelligent RAG system that combines:</p>
+<ul>
+<li><strong>Vector embeddings</strong> for semantic understanding</li>
+<li><strong>Natural language queries</strong> for intuitive search</li>
+<li><strong>Context-aware responses</strong> with source citations</li>
+<li><strong>Real-time validation</strong> against ONDC standards</li>
+</ul>
+
+
+
+
+<h3 id="technical-architecture">Technical Architecture
+  <a href="#technical-architecture"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#57606a"># Core RAG pipeline</span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">1.</span> Document Processing <span style="color:#f6f8fa;background-color:#82071e">→</span> Vector Store
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">2.</span> Query Embedding <span style="color:#f6f8fa;background-color:#82071e">→</span> Similarity Search
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">3.</span> Context Retrieval <span style="color:#f6f8fa;background-color:#82071e">→</span> LLM Generation
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">4.</span> Response Validation <span style="color:#f6f8fa;background-color:#82071e">→</span> User Output
+</span></span></code></pre></div><p><strong>Tech Stack</strong>: Python, LangChain, OpenAI GPT-4, ChromaDB, FastAPI</p>
+
+
+
+
+<h2 id="results">Results
+  <a href="#results"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>⚡ <strong>7-second average response time</strong> (down from 3 hours)
+🎯 <strong>95% accuracy</strong> in category recommendations
+📈 <strong>300% productivity boost</strong> for catalog managers
+💡 <strong>50+ small businesses</strong> onboarded successfully</p>
+
+
+
+
+<h2 id="how-it-works">How It Works
+  <a href="#how-it-works"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="1-intelligent-query-understanding">1. Intelligent Query Understanding
+  <a href="#1-intelligent-query-understanding"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>The system accepts natural language queries like:</p>
+<ul>
+<li>&ldquo;I sell organic honey, which category should I use?&rdquo;</li>
+<li>&ldquo;What are the requirements for handmade jewelry?&rdquo;</li>
+<li>&ldquo;Help me classify eco-friendly cleaning products&rdquo;</li>
+</ul>
+
+
+
+
+<h3 id="2-semantic-search--retrieval">2. Semantic Search &amp; Retrieval
+  <a href="#2-semantic-search--retrieval"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li>Embeds queries using sentence transformers</li>
+<li>Searches through vector database of taxonomy documents</li>
+<li>Retrieves most relevant categories and requirements</li>
+</ul>
+
+
+
+
+<h3 id="3-contextual-response-generation">3. Contextual Response Generation
+  <a href="#3-contextual-response-generation"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li>Uses retrieved context to generate accurate responses</li>
+<li>Includes specific category codes and requirements</li>
+<li>Provides source citations for verification</li>
+</ul>
+
+
+
+
+<h3 id="4-validation--feedback">4. Validation &amp; Feedback
+  <a href="#4-validation--feedback"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li>Cross-references responses with official ONDC standards</li>
+<li>Allows users to provide feedback for continuous improvement</li>
+</ul>
+
+
+
+
+<h2 id="technical-deep-dive">Technical Deep Dive
+  <a href="#technical-deep-dive"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="vector-database-schema">Vector Database Schema
+  <a href="#vector-database-schema"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">TaxonomyEntry</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    category_code<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span>
+</span></span><span style="display:flex;"><span>    category_name<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span>
+</span></span><span style="display:flex;"><span>    description<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span>
+</span></span><span style="display:flex;"><span>    requirements<span style="color:#1f2328">:</span> List<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    examples<span style="color:#1f2328">:</span> List<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    parent_categories<span style="color:#1f2328">:</span> List<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">]</span>
+</span></span></code></pre></div>
+
+
+
+<h3 id="rag-pipeline-implementation">RAG Pipeline Implementation
+  <a href="#rag-pipeline-implementation"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">rag_query</span><span style="color:#1f2328">(</span>user_query<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> QueryResponse<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Embed the query</span>
+</span></span><span style="display:flex;"><span>    query_embedding <span style="color:#0550ae">=</span> embed_model<span style="color:#0550ae">.</span>encode<span style="color:#1f2328">(</span>user_query<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Retrieve relevant documents</span>
+</span></span><span style="display:flex;"><span>    relevant_docs <span style="color:#0550ae">=</span> vector_store<span style="color:#0550ae">.</span>similarity_search<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>        query_embedding<span style="color:#1f2328">,</span> k<span style="color:#0550ae">=</span><span style="color:#0550ae">5</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Generate response</span>
+</span></span><span style="display:flex;"><span>    context <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#0550ae">.</span>join<span style="color:#1f2328">([</span>doc<span style="color:#0550ae">.</span>content <span style="color:#cf222e">for</span> doc <span style="color:#0550ae">in</span> relevant_docs<span style="color:#1f2328">])</span>
+</span></span><span style="display:flex;"><span>    response <span style="color:#0550ae">=</span> llm<span style="color:#0550ae">.</span>generate<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>        prompt<span style="color:#0550ae">=</span><span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;Context: </span><span style="color:#0a3069">{</span>context<span style="color:#0a3069">}</span><span style="color:#0a3069">\n\n</span><span style="color:#0a3069">Query: </span><span style="color:#0a3069">{</span>user_query<span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        system_prompt<span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;You are an ONDC taxonomy expert...&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> QueryResponse<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>        answer<span style="color:#0550ae">=</span>response<span style="color:#0550ae">.</span>content<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        sources<span style="color:#0550ae">=</span>relevant_docs<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        confidence_score<span style="color:#0550ae">=</span>response<span style="color:#0550ae">.</span>confidence
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">)</span>
+</span></span></code></pre></div>
+
+
+
+<h2 id="impact--future-work">Impact &amp; Future Work
+  <a href="#impact--future-work"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>The system has democratized access to complex taxonomic knowledge, enabling:</p>
+<ul>
+<li><strong>Small businesses</strong> to compete effectively in digital commerce</li>
+<li><strong>Faster onboarding</strong> to the ONDC ecosystem</li>
+<li><strong>Reduced errors</strong> in catalog classification</li>
+</ul>
+
+
+
+
+<h3 id="future-enhancements">Future Enhancements
+  <a href="#future-enhancements"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li>Multi-language support for regional businesses</li>
+<li>Integration with popular e-commerce platforms</li>
+<li>Automated catalog generation from product images</li>
+<li>Real-time compliance monitoring</li>
+</ul>
+
+
+
+
+<h2 id="lessons-learned">Lessons Learned
+  <a href="#lessons-learned"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<ol>
+<li><strong>Context Quality Matters</strong>: Garbage in, garbage out applies to RAG systems</li>
+<li><strong>User Feedback Loops</strong>: Essential for continuous improvement</li>
+<li><strong>Domain Expertise</strong>: Critical for validating AI-generated responses</li>
+<li><strong>Performance Optimization</strong>: Vector search speed impacts user experience</li>
+</ol>
+<hr>
+<p><em>Built with ❤️ for the Indian e-commerce ecosystem</em></p>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">November 15, 2023</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">3 minute read, 434 words</dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Categories:</dt>
+    <dd class="fw5 ml0"> <a href="http://localhost:1313/portfolio/categories/ai">AI</a>  <a href="http://localhost:1313/portfolio/categories/machine-learning">Machine Learning</a>  <a href="http://localhost:1313/portfolio/categories/nlp">NLP</a>  <a href="http://localhost:1313/portfolio/categories/e-commerce">E-commerce</a> </dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Tags:</dt>
+    <dd class="fw5 ml0"> <a href="http://localhost:1313/portfolio/tags/rag">RAG</a>  <a href="http://localhost:1313/portfolio/tags/langchain">LangChain</a>  <a href="http://localhost:1313/portfolio/tags/vector-databases">Vector Databases</a>  <a href="http://localhost:1313/portfolio/tags/openai">OpenAI</a> </dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+    <dd class="fw5 ml0"><a href="/portfolio/post/rag-ondc-taxonomy/">How I Built an AI System That Understood ONDC Taxonomy</a></dd>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="http://localhost:1313/portfolio/project/ai-research-agent/">AI Research Agent for Medical ML &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2025
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/Uday-461" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/portfolio/" title="linkedin" >
+      <i class="fab fa-linkedin fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="https://github.com/Uday-461" title="GitHub">GitHub</a>
+      
+    </div>
+  </nav>
+  
+</footer>
+
+      </div>
+    </body>
+</html>

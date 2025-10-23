@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RAG on Uday | Portfolio</title>
+    <link>http://localhost:1313/portfolio/tags/rag/</link>
+    <description>Recent content in RAG on Uday | Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/portfolio/tags/rag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAG-based Catalog System for ONDC</title>
+      <link>http://localhost:1313/portfolio/project/rag-catalog-system/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/project/rag-catalog-system/</guid>
+      <description>Built a retrieval-augmented generation system that understands complex product taxonomies and delivers instant, accurate results for e-commerce catalog management.</description>
+    </item>
+  </channel>
+</rss>

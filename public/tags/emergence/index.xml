@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emergence on Uday | Portfolio</title>
+    <link>http://localhost:1313/portfolio/tags/emergence/</link>
+    <description>Recent content in Emergence on Uday | Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/portfolio/tags/emergence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product is Applied Systems Design</title>
+      <link>http://localhost:1313/portfolio/post/product-is-systems-design/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/post/product-is-systems-design/</guid>
+      <description>An exploration of how systems thinking principles can transform product development and lead to more resilient, adaptable solutions.</description>
+    </item>
+  </channel>
+</rss>
