@@ -1,8 +1,12 @@
-baseURL = 'https://yourdomain.com'
+baseURL = 'https://uday-461.github.io/portfolio'
 theme = "hugo-apero"
 languageCode = "en-us"
 title = "Uday | Portfolio"
 author = "Uday"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 copyright = ""
 metaDataFormat = "yaml"
 footnoteReturnLinkContents = "&#8617;"
