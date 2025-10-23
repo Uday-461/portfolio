@@ -1,4 +1,4 @@
-baseURL = 'https://uday-461.github.io/portfolio'
+baseURL = 'https://udaydahiya.org'
 theme = "hugo-apero"
 languageCode = "en-us"
 title = "Uday | Portfolio"
