@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Case Study on Uday | Portfolio</title>
-    <link>http://localhost:1313/portfolio/categories/case-study/</link>
+    <link>http://localhost:1313/categories/case-study/</link>
     <description>Recent content in Case Study on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/portfolio/categories/case-study/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/case-study/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Built an AI System That Understood ONDC Taxonomy</title>
-      <link>http://localhost:1313/portfolio/post/rag-ondc-taxonomy/</link>
+      <link>http://localhost:1313/post/rag-ondc-taxonomy/</link>
       <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/post/rag-ondc-taxonomy/</guid>
+      <guid>http://localhost:1313/post/rag-ondc-taxonomy/</guid>
       <description>A deep dive into the technical challenges and solutions for creating a retrieval-augmented generation system that can understand and navigate complex product taxonomies.</description>
     </item>
   </channel>

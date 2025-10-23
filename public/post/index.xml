@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog Posts on AI &amp; Systems on Uday | Portfolio</title>
-    <link>http://localhost:1313/portfolio/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Blog Posts on AI &amp; Systems on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/portfolio/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Built an AI System That Understood ONDC Taxonomy</title>
-      <link>http://localhost:1313/portfolio/post/rag-ondc-taxonomy/</link>
+      <link>http://localhost:1313/post/rag-ondc-taxonomy/</link>
       <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/post/rag-ondc-taxonomy/</guid>
+      <guid>http://localhost:1313/post/rag-ondc-taxonomy/</guid>
       <description>A deep dive into the technical challenges and solutions for creating a retrieval-augmented generation system that can understand and navigate complex product taxonomies.</description>
     </item>
     <item>
       <title>AI Tools Fail When You Forget the Human Layer</title>
-      <link>http://localhost:1313/portfolio/post/ai-tools-human-layer/</link>
+      <link>http://localhost:1313/post/ai-tools-human-layer/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/post/ai-tools-human-layer/</guid>
+      <guid>http://localhost:1313/post/ai-tools-human-layer/</guid>
       <description>Reflections on why the most successful AI applications are those that thoughtfully integrate human expertise and workflow rather than trying to replace it entirely.</description>
     </item>
     <item>
       <title>Product is Applied Systems Design</title>
-      <link>http://localhost:1313/portfolio/post/product-is-systems-design/</link>
+      <link>http://localhost:1313/post/product-is-systems-design/</link>
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/post/product-is-systems-design/</guid>
+      <guid>http://localhost:1313/post/product-is-systems-design/</guid>
       <description>An exploration of how systems thinking principles can transform product development and lead to more resilient, adaptable solutions.</description>
     </item>
   </channel>

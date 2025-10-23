@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI Ethics on Uday | Portfolio</title>
-    <link>http://localhost:1313/portfolio/tags/ai-ethics/</link>
+    <link>http://localhost:1313/tags/ai-ethics/</link>
     <description>Recent content in AI Ethics on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/portfolio/tags/ai-ethics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ai-ethics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Tools Fail When You Forget the Human Layer</title>
-      <link>http://localhost:1313/portfolio/post/ai-tools-human-layer/</link>
+      <link>http://localhost:1313/post/ai-tools-human-layer/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/post/ai-tools-human-layer/</guid>
+      <guid>http://localhost:1313/post/ai-tools-human-layer/</guid>
       <description>Reflections on why the most successful AI applications are those that thoughtfully integrate human expertise and workflow rather than trying to replace it entirely.</description>
     </item>
   </channel>
