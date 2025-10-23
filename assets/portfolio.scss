@@ -596,6 +596,200 @@ blockquote {
 }
 
 // ==========================================================================
+// Enhanced Blog & Reads Grid Layout
+// ==========================================================================
+
+// Blog page grid layout
+.posts-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-xl;
+  margin: $spacing-xl 0;
+
+  .post-card {
+    background: $siteBgColor;
+    border: 1px solid $borderColor;
+    border-radius: $radius-lg;
+    padding: $spacing-lg;
+    transition: all $transition-normal;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      border-color: $borderColorLight;
+      box-shadow: $shadow-lg;
+      transform: translateY(-2px);
+    }
+
+    .post-title {
+      font-family: $font-family-serif;
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 1.3;
+      color: $headingColor;
+      margin: 0 0 $spacing-sm;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: none;
+
+        &:hover {
+          color: $linkColor;
+        }
+      }
+    }
+
+    .post-date {
+      color: $textColor;
+      font-size: 0.875rem;
+      margin-bottom: $spacing-md;
+    }
+
+    .post-excerpt {
+      color: $textColor;
+      line-height: 1.6;
+      margin-bottom: $spacing-md;
+    }
+
+    .post-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-xs;
+      margin-top: $spacing-md;
+
+      .tag {
+        font-size: 0.75rem;
+        padding: $spacing-xs $spacing-sm;
+        background: $borderColorLight;
+        color: $textColor;
+        border-radius: $radius-md;
+        text-decoration: none;
+        transition: all $transition-fast;
+
+        &:hover {
+          background: $borderColor;
+          color: $headingColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Reads page grid layout
+.reads-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-xl;
+  margin: $spacing-xl 0;
+
+  .read-card {
+    background: $siteBgColor;
+    border: 1px solid $borderColor;
+    border-radius: $radius-lg;
+    padding: $spacing-lg;
+    transition: all $transition-normal;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      border-color: $borderColorLight;
+      box-shadow: $shadow-lg;
+      transform: translateY(-2px);
+    }
+
+    .read-title {
+      font-family: $font-family-serif;
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 1.3;
+      color: $headingColor;
+      margin: 0 0 $spacing-sm;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: none;
+
+        &:hover {
+          color: $linkColor;
+        }
+      }
+    }
+
+    .read-author {
+      color: $textColor;
+      font-size: 0.875rem;
+      font-style: italic;
+      margin-bottom: $spacing-sm;
+    }
+
+    .read-excerpt {
+      color: $textColor;
+      line-height: 1.6;
+      margin-bottom: $spacing-md;
+    }
+
+    .read-rating {
+      display: flex;
+      align-items: center;
+      gap: $spacing-xs;
+      margin-top: $spacing-md;
+
+      .star {
+        color: $warningColor;
+        font-size: 0.875rem;
+      }
+    }
+
+    .read-categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-xs;
+      margin-top: $spacing-md;
+
+      .category-tag {
+        font-size: 0.75rem;
+        padding: $spacing-xs $spacing-sm;
+        background: rgba(16, 185, 129, 0.1);
+        color: $accentColor;
+        border-radius: $radius-md;
+        text-decoration: none;
+        transition: all $transition-fast;
+
+        &:hover {
+          background: rgba(16, 185, 129, 0.2);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Responsive design for grid layouts
+@media screen and (max-width: 1024px) {
+  .posts-list,
+  .reads-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-lg;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .posts-list,
+  .reads-list {
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+  }
+
+  .post-card,
+  .read-card {
+    padding: $spacing-md;
+  }
+}
+
+// ==========================================================================
 // Enhanced Accessibility
 // ==========================================================================
 

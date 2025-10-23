@@ -78,15 +78,10 @@ enableEmoji = true
   url = "/reads/"
   weight = 3
 [[menu.header]]
-  name = "CV"
-  title = "CV"
-  url = "/cv/"
-  weight = 4
-[[menu.header]]
   name = "Blog"
   title = "Blog"
   url = "/post/"
-  weight = 5
+  weight = 4
 
 # Configure footer menu if needed
 [[menu.footer]]
