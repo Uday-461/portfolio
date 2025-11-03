@@ -44,7 +44,7 @@
   <meta itemprop="description" content="Built an edge-native API gateway that unifies multiple AI providers, implements usage-based billing through a credit system, and supports Model Context Protocol for advanced AI applications.">
   <meta itemprop="datePublished" content="2025-09-20T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-09-20T00:00:00+00:00">
-  <meta itemprop="wordCount" content="873">
+  <meta itemprop="wordCount" content="801">
   <meta itemprop="keywords" content="Zuplo,TypeScript,API Gateway,AI Services,Edge Computing">
   
   <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -168,34 +168,8 @@
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h3>
-<pre tabindex="0"><code>Client Application
-  ↓
-[Edge Gateway - 300+ Locations]
-  ↓
-Authentication Policy
-  → Validate API Key
-  → Load User Context
-  ↓
-Credit Balance Check
-  → Calculate Request Cost
-  → Verify Balance
-  ↓
-Rate Limit Enforcement
-  → Apply Throttling
-  ↓
-AI Service Router
-  → Select Provider (cost/latency/availability)
-  → Transform Request
-  ↓
-[OpenAI | Anthropic | Google | Custom Models]
-  ↓
-Response Handler
-  → Normalize Format
-  → Deduct Credits
-  → Log Metrics
-  ↓
-Client Response
-</code></pre><p><strong>Tech Stack</strong>: Zuplo (Edge Platform), TypeScript, Redis (credit ledger), PostgreSQL (audit logs)</p>
+<p><img src="/img/diagrams/mcp-gateway-architecture.svg" alt="MCP Gateway Architecture"></p>
+<p><strong>Tech Stack</strong>: Zuplo (Edge Platform), TypeScript, Redis (credit ledger), PostgreSQL (audit logs)</p>
 
 
 
@@ -605,7 +579,7 @@ policies/
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">5 minute read, 873 words</dd>
+    <dd class="fw5 ml0">4 minute read, 801 words</dd>
   </dl>
   
   <dl class="f6 lh-copy">

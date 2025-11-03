@@ -181,6 +181,8 @@ Completion Verification
 
 ## Architecture
 
+![Vendor Management Platform Architecture](/img/diagrams/vendor-platform-architecture.svg)
+
 ### Component Structure
 ```typescript
 app/

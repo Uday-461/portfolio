@@ -40,15 +40,7 @@ Built an intelligent agent that:
 
 ### Architecture Overview
 
-```mermaid
-graph TD
-    A[Research Problem] --> B[NLP Understanding]
-    B --> C[Pipeline Generation]
-    C --> D[AutoML Execution]
-    D --> E[Validation & Testing]
-    E --> F[Explainable Results]
-    F --> G[Medical Review]
-```
+![AI Research Agent Architecture](/img/diagrams/ai-research-architecture.svg)
 
 ## Key Features
 

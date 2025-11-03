@@ -53,30 +53,7 @@ Built an enterprise-grade ETL pipeline that:
 
 ### Architecture
 
-```python
-[Data Sources]
-  ├─ API Sources (Orders, Tickets, Payments)
-  └─ UI Sources (Power BI Dashboards)
-       ↓
-[Extraction Layer]
-  ├─ API Extractors (HTTP clients)
-  └─ UI Extractors (Selenium automation)
-       ↓
-[Chunking Engine]
-  ├─ Date range splitting (configurable per source)
-  └─ Chunk queue management
-       ↓
-[Execution Engine]
-  ├─ Parallel Workers (Process Pool, 3-5x faster)
-  └─ Sequential Processor (Stable for UI)
-       ↓
-[Storage Layer]
-  ├─ Raw CSV files (per chunk)
-  └─ Aggregated data (per source)
-       ↓
-[PostgreSQL Database]
-  └─ Bulk COPY (50K+ rows/sec)
-```
+![ETL Pipeline Architecture](/img/diagrams/etl-pipeline-architecture.svg)
 
 **Tech Stack**: Python, PostgreSQL, Selenium, AsyncIO, YAML
 

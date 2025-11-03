@@ -54,35 +54,7 @@ Built an enterprise-grade API gateway that:
 
 ### Architecture
 
-```
-Client Application
-  ↓
-[Edge Gateway - 300+ Locations]
-  ↓
-Authentication Policy
-  → Validate API Key
-  → Load User Context
-  ↓
-Credit Balance Check
-  → Calculate Request Cost
-  → Verify Balance
-  ↓
-Rate Limit Enforcement
-  → Apply Throttling
-  ↓
-AI Service Router
-  → Select Provider (cost/latency/availability)
-  → Transform Request
-  ↓
-[OpenAI | Anthropic | Google | Custom Models]
-  ↓
-Response Handler
-  → Normalize Format
-  → Deduct Credits
-  → Log Metrics
-  ↓
-Client Response
-```
+![MCP Gateway Architecture](/img/diagrams/mcp-gateway-architecture.svg)
 
 **Tech Stack**: Zuplo (Edge Platform), TypeScript, Redis (credit ledger), PostgreSQL (audit logs)
 
