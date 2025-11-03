@@ -9,18 +9,11 @@
     <lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://udaydahiya.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Unified AI API Gateway</title>
-      <link>https://udaydahiya.org/project/unified-api-gateway/</link>
+      <title>MCP Gateway</title>
+      <link>https://udaydahiya.org/project/mcp-gateway/</link>
       <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://udaydahiya.org/project/unified-api-gateway/</guid>
+      <guid>https://udaydahiya.org/project/mcp-gateway/</guid>
       <description>Built an edge-native API gateway that unifies multiple AI providers, implements usage-based billing through a credit system, and supports Model Context Protocol for advanced AI applications.</description>
-    </item>
-    <item>
-      <title>Enterprise API Key Management System</title>
-      <link>https://udaydahiya.org/project/api-key-management/</link>
-      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://udaydahiya.org/project/api-key-management/</guid>
-      <description>Built a comprehensive API key management system with role-based access control, multi-key support, and advanced security features including account protection and audit logging.</description>
     </item>
     <item>
       <title>Enterprise ETL Pipeline</title>
@@ -30,18 +23,11 @@
       <description>Built a modular ETL system that reduces manual data collection time by 90%, extracting data from multiple sources via APIs and browser automation into a unified PostgreSQL warehouse.</description>
     </item>
     <item>
-      <title>Vendor-Job Marketplace Platform</title>
-      <link>https://udaydahiya.org/project/vendor-job-marketplace/</link>
-      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://udaydahiya.org/project/vendor-job-marketplace/</guid>
-      <description>Built a marketplace platform that connects service vendors with job opportunities, featuring real-time matching, Supabase backend, and AI-assisted development with Lovable.</description>
-    </item>
-    <item>
-      <title>HR Vendor Management Portal</title>
-      <link>https://udaydahiya.org/project/hr-vendor-portal/</link>
+      <title>Vendor Management Platform</title>
+      <link>https://udaydahiya.org/project/vendor-management-platform/</link>
       <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://udaydahiya.org/project/hr-vendor-portal/</guid>
-      <description>Built a modern vendor management platform for HR departments using Next.js and v0.dev, featuring automated workflows, document management, and integrated communication channels.</description>
+      <guid>https://udaydahiya.org/project/vendor-management-platform/</guid>
+      <description>Built a comprehensive vendor management platform that handles vendor onboarding, document management, job matching, and communication workflows using Next.js, Supabase, and modern web technologies.</description>
     </item>
     <item>
       <title>How I Built an AI System That Understood ONDC Taxonomy</title>
@@ -77,13 +63,6 @@
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://udaydahiya.org/project/ai-research-agent/</guid>
       <description>Created an intelligent agent that helps doctors and researchers automatically generate, test, and validate machine learning pipelines for their specific research needs.</description>
-    </item>
-    <item>
-      <title>Modular AI Platform with Supabase &amp; Hugging Face</title>
-      <link>https://udaydahiya.org/project/modular-ai-platform/</link>
-      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://udaydahiya.org/project/modular-ai-platform/</guid>
-      <description>Developed a flexible, modular platform that combines the power of modern LLMs with robust backend infrastructure, enabling rapid prototyping and deployment of AI applications.</description>
     </item>
     <item>
       <title>Building for Emergence</title>

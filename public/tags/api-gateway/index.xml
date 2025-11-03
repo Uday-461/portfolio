@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://udaydahiya.org/tags/api-gateway/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Unified AI API Gateway</title>
-      <link>https://udaydahiya.org/project/unified-api-gateway/</link>
+      <title>MCP Gateway</title>
+      <link>https://udaydahiya.org/project/mcp-gateway/</link>
       <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://udaydahiya.org/project/unified-api-gateway/</guid>
+      <guid>https://udaydahiya.org/project/mcp-gateway/</guid>
       <description>Built an edge-native API gateway that unifies multiple AI providers, implements usage-based billing through a credit system, and supports Model Context Protocol for advanced AI applications.</description>
     </item>
   </channel>

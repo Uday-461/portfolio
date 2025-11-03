@@ -1,10 +1,10 @@
 ---
-title: 'Unified AI API Gateway'
+title: 'MCP Gateway'
 subtitle: "Multi-provider AI gateway with credit-based billing and MCP support"
 summary: "Built an edge-native API gateway that unifies multiple AI providers, implements usage-based billing through a credit system, and supports Model Context Protocol for advanced AI applications."
 author: Uday
 date: '2025-09-20'
-slug: unified-api-gateway
+slug: mcp-gateway
 categories:
   - Infrastructure
   - API Development

@@ -6,14 +6,14 @@
     <description>Recent content in Marketplace on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://udaydahiya.org/categories/marketplace/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Vendor-Job Marketplace Platform</title>
-      <link>https://udaydahiya.org/project/vendor-job-marketplace/</link>
-      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://udaydahiya.org/project/vendor-job-marketplace/</guid>
-      <description>Built a marketplace platform that connects service vendors with job opportunities, featuring real-time matching, Supabase backend, and AI-assisted development with Lovable.</description>
+      <title>Vendor Management Platform</title>
+      <link>https://udaydahiya.org/project/vendor-management-platform/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/vendor-management-platform/</guid>
+      <description>Built a comprehensive vendor management platform that handles vendor onboarding, document management, job matching, and communication workflows using Next.js, Supabase, and modern web technologies.</description>
     </item>
   </channel>
 </rss>

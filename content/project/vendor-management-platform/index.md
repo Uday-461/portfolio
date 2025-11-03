@@ -1,18 +1,18 @@
 ---
-title: 'HR Vendor Management Portal'
-subtitle: "Streamlined vendor operations with AI-assisted development"
-summary: "Built a modern vendor management platform for HR departments using Next.js and v0.dev, featuring automated workflows, document management, and integrated communication channels."
+title: 'Vendor Management Platform'
+subtitle: "Complete vendor lifecycle and job marketplace solution"
+summary: "Built a comprehensive vendor management platform that handles vendor onboarding, document management, job matching, and communication workflows using Next.js, Supabase, and modern web technologies."
 author: Uday
 date: '2025-06-15'
-slug: hr-vendor-portal
+slug: vendor-management-platform
 categories:
   - Full Stack
   - Business Applications
-  - AI Development
+  - Marketplace
 tags:
   - Next.js
   - TypeScript
-  - v0.dev
+  - Supabase
   - Vercel
   - shadcn-ui
 ---
@@ -21,8 +21,8 @@ tags:
 
 <div class="project-highlights">
   <div class="highlight-stat">
-    <span class="stat-number">v0.dev</span>
-    <span class="stat-label">AI-powered development</span>
+    <span class="stat-number">Real-time</span>
+    <span class="stat-label">Job matching</span>
   </div>
   <div class="highlight-stat">
     <span class="stat-number">3</span>
@@ -36,27 +36,27 @@ tags:
 
 ## The Challenge
 
-HR departments struggle with vendor management:
-- **Fragmented communication**: Email chains and phone calls across multiple vendors
-- **Manual document tracking**: Paper-based or scattered digital files
-- **Compliance burden**: Tracking certifications, insurance, and renewals manually
-- **No visibility**: Limited insight into vendor performance and activity
-- **Administrative overhead**: Hours spent on vendor onboarding and coordination
+Organizations struggle with vendor operations and job matching:
+- **Fragmented communication**: Email chains across multiple vendors and employers
+- **Manual document tracking**: Paper-based certifications and compliance documents
+- **No job marketplace**: Vendors search multiple platforms for opportunities
+- **Compliance burden**: Tracking certifications, insurance renewals manually
+- **Poor visibility**: Limited insight into vendor performance and availability
 
 ## The Solution
 
-Built a centralized vendor portal that automates HR-vendor interactions:
-- **Self-service onboarding** for vendors with document upload
-- **Integrated messaging** for HR-vendor communication
+Built a comprehensive platform combining vendor management with job marketplace:
+- **Vendor lifecycle management**: Onboarding, profiles, document tracking
+- **Job marketplace**: Connect vendors with opportunities via intelligent matching
+- **Real-time platform** powered by Supabase for instant updates
 - **Automated compliance tracking** with expiration alerts
-- **Workflow automation** for service requests and approvals
-- **Performance analytics** and custom reporting
+- **Integrated communication** for proposals and negotiations
 
 ### Tech Stack
 
 **Frontend**: Next.js (App Router), React, TypeScript, Tailwind CSS, shadcn-ui
-**Development**: v0.dev (AI-assisted), Vercel (deployment)
-**Architecture**: Server components, Edge functions, Auto-scaling
+**Backend**: Supabase (Database, Auth, Real-time, APIs)
+**Deployment**: Vercel (Edge functions, Auto-scaling)
 
 ## Key Features
 
@@ -86,6 +86,39 @@ interface VendorOnboarding {
 - Contact management
 - Status tracking (active/inactive/pending)
 - Performance ratings
+
+### Job Marketplace
+
+**Intelligent Matching**:
+```typescript
+interface JobOpportunity {
+  id: string;
+  title: string;
+  requiredSkills: string[];
+  budget: { min: number; max: number };
+  location: 'remote' | 'onsite' | 'hybrid';
+  deadline: Date;
+}
+
+function matchVendorsToJob(job: JobOpportunity, vendors: Vendor[]): Match[] {
+  return vendors
+    .map(vendor => ({
+      vendor,
+      score: calculateSkillOverlap(vendor.skills, job.requiredSkills) * 0.5 +
+             (vendor.availability === 'available' ? 20 : 0) +
+             (vendor.rating / 5) * 30
+    }))
+    .filter(match => match.score > THRESHOLD)
+    .sort((a, b) => b.score - a.score);
+}
+```
+
+**Features**:
+- Real-time job postings with Supabase subscriptions
+- Automated vendor recommendations based on skills
+- Application tracking and proposal management
+- Budget and timeline matching
+- Remote/onsite/hybrid filtering
 
 ### Integrated Communication
 
@@ -159,12 +192,45 @@ app/
 │   ├── VendorList.tsx
 │   ├── VendorProfile.tsx
 │   └── DocumentUpload.tsx
+├── jobs/
+│   ├── JobMarketplace.tsx
+│   ├── JobListing.tsx
+│   └── MatchingAlgorithm.tsx
 ├── communication/
 │   ├── MessageCenter.tsx
 │   └── Announcements.tsx
 └── reports/
     ├── Analytics.tsx
     └── ReportBuilder.tsx
+```
+
+### Real-time Updates with Supabase
+
+```typescript
+// Subscribe to new job postings
+const jobSubscription = supabase
+  .channel('jobs')
+  .on('postgres_changes', {
+    event: 'INSERT',
+    schema: 'public',
+    table: 'jobs'
+  }, (payload) => {
+    notifyMatchingVendors(payload.new);
+  })
+  .subscribe();
+
+// Real-time application status
+const applicationUpdates = supabase
+  .channel('applications')
+  .on('postgres_changes', {
+    event: 'UPDATE',
+    schema: 'public',
+    table: 'applications',
+    filter: `vendor_id=eq.${vendorId}`
+  }, (payload) => {
+    updateApplicationStatus(payload.new);
+  })
+  .subscribe();
 ```
 
 ### Data Models
@@ -192,32 +258,6 @@ interface ServiceRequest {
   };
 }
 ```
-
-## AI-Assisted Development with v0.dev
-
-### Auto-Sync Workflow
-```
-v0.dev AI Generation
-  ↓
-Auto-commit to GitHub
-  ↓
-Vercel Auto-Deploy
-  ↓
-Production
-```
-
-**Benefits**:
-- **Rapid iteration**: Features deployed in minutes
-- **Design consistency**: AI maintains component patterns
-- **Type safety**: Generated TypeScript code
-- **Best practices**: Modern React patterns
-
-### Development Flow
-1. Describe feature in natural language to v0.dev
-2. AI generates Next.js components with shadcn-ui
-3. Review and refine in v0.dev interface
-4. Auto-sync to GitHub repository
-5. Vercel automatically builds and deploys
 
 ## User Roles & Permissions
 
@@ -295,10 +335,10 @@ git push origin main
 
 ## Lessons Learned
 
-1. **AI-assisted development accelerates delivery**: v0.dev reduced development time by 60%
+1. **Modern tooling accelerates delivery**: Next.js and Supabase enabled rapid development
 2. **Component libraries save time**: shadcn-ui provided production-ready components
 3. **Edge deployment improves UX**: Global distribution = better performance
-4. **User feedback drives features**: Iterative development based on HR team input
+4. **User feedback drives features**: Iterative development based on user needs
 
 ---
 

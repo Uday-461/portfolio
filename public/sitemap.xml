@@ -26,6 +26,9 @@
     <loc>https://udaydahiya.org/categories/infrastructure/</loc>
     <lastmod>2025-09-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://udaydahiya.org/project/mcp-gateway/</loc>
+    <lastmod>2025-09-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://udaydahiya.org/tags/</loc>
     <lastmod>2025-09-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -35,37 +38,13 @@
     <loc>https://udaydahiya.org/</loc>
     <lastmod>2025-09-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://udaydahiya.org/project/unified-api-gateway/</loc>
-    <lastmod>2025-09-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://udaydahiya.org/tags/zuplo/</loc>
     <lastmod>2025-09-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://udaydahiya.org/categories/backend/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/project/api-key-management/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/tags/fastapi/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/tags/postgresql/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/tags/python/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/tags/rbac/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/categories/security/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/tags/security/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://udaydahiya.org/categories/automation/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://udaydahiya.org/categories/backend/</loc>
     <lastmod>2025-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://udaydahiya.org/categories/data-engineering/</loc>
@@ -80,46 +59,34 @@
     <loc>https://udaydahiya.org/tags/etl/</loc>
     <lastmod>2025-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://udaydahiya.org/tags/selenium/</loc>
+    <loc>https://udaydahiya.org/tags/postgresql/</loc>
     <lastmod>2025-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://udaydahiya.org/categories/full-stack/</loc>
-    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
+    <loc>https://udaydahiya.org/tags/python/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://udaydahiya.org/tags/lovable/</loc>
-    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/categories/marketplace/</loc>
-    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/tags/react/</loc>
-    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/tags/shadcn-ui/</loc>
-    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/tags/supabase/</loc>
-    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/project/vendor-job-marketplace/</loc>
-    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/categories/web-development/</loc>
-    <lastmod>2025-06-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/categories/ai-development/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+    <loc>https://udaydahiya.org/tags/selenium/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://udaydahiya.org/categories/business-applications/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://udaydahiya.org/project/hr-vendor-portal/</loc>
+    <loc>https://udaydahiya.org/categories/full-stack/</loc>
+    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://udaydahiya.org/categories/marketplace/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://udaydahiya.org/tags/next.js/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://udaydahiya.org/tags/v0.dev/</loc>
+    <loc>https://udaydahiya.org/tags/shadcn-ui/</loc>
+    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://udaydahiya.org/tags/supabase/</loc>
+    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://udaydahiya.org/project/vendor-management-platform/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://udaydahiya.org/tags/vercel/</loc>
@@ -236,6 +203,9 @@
     <loc>https://udaydahiya.org/tags/automl/</loc>
     <lastmod>2023-09-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://udaydahiya.org/tags/fastapi/</loc>
+    <lastmod>2023-09-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://udaydahiya.org/categories/healthcare/</loc>
     <lastmod>2023-09-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -247,18 +217,6 @@
   </url><url>
     <loc>https://udaydahiya.org/tags/scikit-learn/</loc>
     <lastmod>2023-09-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/tags/hugging-face/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/tags/infrastructure/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/project/modular-ai-platform/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://udaydahiya.org/categories/platform-engineering/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://udaydahiya.org/tags/architecture/</loc>
     <lastmod>2022-03-15T00:00:00+00:00</lastmod>

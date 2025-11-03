@@ -6,15 +6,8 @@
     <description>Recent content in FastAPI on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://udaydahiya.org/tags/fastapi/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Enterprise API Key Management System</title>
-      <link>https://udaydahiya.org/project/api-key-management/</link>
-      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://udaydahiya.org/project/api-key-management/</guid>
-      <description>Built a comprehensive API key management system with role-based access control, multi-key support, and advanced security features including account protection and audit logging.</description>
-    </item>
     <item>
       <title>AI Research Agent for Medical ML</title>
       <link>https://udaydahiya.org/project/ai-research-agent/</link>
