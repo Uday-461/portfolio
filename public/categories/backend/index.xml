@@ -2,17 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backend on Uday | Portfolio</title>
-    <link>http://localhost:1314/categories/backend/</link>
+    <link>https://udaydahiya.org/categories/backend/</link>
     <description>Recent content in Backend on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/categories/backend/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://udaydahiya.org/categories/backend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enterprise API Key Management System</title>
+      <link>https://udaydahiya.org/project/api-key-management/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/api-key-management/</guid>
+      <description>Built a comprehensive API key management system with role-based access control, multi-key support, and advanced security features including account protection and audit logging.</description>
+    </item>
+    <item>
+      <title>Enterprise ETL Pipeline</title>
+      <link>https://udaydahiya.org/project/enterprise-etl-pipeline/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/enterprise-etl-pipeline/</guid>
+      <description>Built a modular ETL system that reduces manual data collection time by 90%, extracting data from multiple sources via APIs and browser automation into a unified PostgreSQL warehouse.</description>
+    </item>
     <item>
       <title>Modular AI Platform with Supabase &amp; Hugging Face</title>
-      <link>http://localhost:1314/project/modular-ai-platform/</link>
+      <link>https://udaydahiya.org/project/modular-ai-platform/</link>
       <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/project/modular-ai-platform/</guid>
+      <guid>https://udaydahiya.org/project/modular-ai-platform/</guid>
       <description>Developed a flexible, modular platform that combines the power of modern LLMs with robust backend infrastructure, enabling rapid prototyping and deployment of AI applications.</description>
     </item>
   </channel>

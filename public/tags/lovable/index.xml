@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lovable on Uday | Portfolio</title>
+    <link>https://udaydahiya.org/tags/lovable/</link>
+    <description>Recent content in Lovable on Uday | Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://udaydahiya.org/tags/lovable/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vendor-Job Marketplace Platform</title>
+      <link>https://udaydahiya.org/project/vendor-job-marketplace/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/vendor-job-marketplace/</guid>
+      <description>Built a marketplace platform that connects service vendors with job opportunities, featuring real-time matching, Supabase backend, and AI-assisted development with Lovable.</description>
+    </item>
+  </channel>
+</rss>

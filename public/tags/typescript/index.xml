@@ -2,17 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TypeScript on Uday | Portfolio</title>
-    <link>http://localhost:1314/tags/typescript/</link>
+    <link>https://udaydahiya.org/tags/typescript/</link>
     <description>Recent content in TypeScript on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://udaydahiya.org/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unified AI API Gateway</title>
+      <link>https://udaydahiya.org/project/unified-api-gateway/</link>
+      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/unified-api-gateway/</guid>
+      <description>Built an edge-native API gateway that unifies multiple AI providers, implements usage-based billing through a credit system, and supports Model Context Protocol for advanced AI applications.</description>
+    </item>
+    <item>
+      <title>Vendor-Job Marketplace Platform</title>
+      <link>https://udaydahiya.org/project/vendor-job-marketplace/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/vendor-job-marketplace/</guid>
+      <description>Built a marketplace platform that connects service vendors with job opportunities, featuring real-time matching, Supabase backend, and AI-assisted development with Lovable.</description>
+    </item>
+    <item>
+      <title>HR Vendor Management Portal</title>
+      <link>https://udaydahiya.org/project/hr-vendor-portal/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/hr-vendor-portal/</guid>
+      <description>Built a modern vendor management platform for HR departments using Next.js and v0.dev, featuring automated workflows, document management, and integrated communication channels.</description>
+    </item>
     <item>
       <title>Modular AI Platform with Supabase &amp; Hugging Face</title>
-      <link>http://localhost:1314/project/modular-ai-platform/</link>
+      <link>https://udaydahiya.org/project/modular-ai-platform/</link>
       <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/project/modular-ai-platform/</guid>
+      <guid>https://udaydahiya.org/project/modular-ai-platform/</guid>
       <description>Developed a flexible, modular platform that combines the power of modern LLMs with robust backend infrastructure, enabling rapid prototyping and deployment of AI applications.</description>
     </item>
   </channel>

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Uday | Portfolio</title>
-    <link>http://localhost:1314/about/</link>
+    <link>https://udaydahiya.org/about/</link>
     <description>Recent content in Home on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1314/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://udaydahiya.org/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

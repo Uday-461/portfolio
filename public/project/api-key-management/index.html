@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.152.1">
+<title>Enterprise API Key Management System | Uday | Portfolio</title>
+
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="Production-ready FastAPI server with RBAC and security monitoring">
+
+
+<meta property="og:site_name" content="Uday | Portfolio">
+<meta property="og:title" content="Enterprise API Key Management System | Uday | Portfolio">
+<meta property="og:description" content="Production-ready FastAPI server with RBAC and security monitoring" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="https://udaydahiya.org/project/api-key-management/" />
+<meta property="og:locale" content="en-us">
+
+
+
+
+    
+        <meta property="og:image" content="https://udaydahiya.org/img/uday_linkedin.jpeg" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://udaydahiya.org/img/uday_linkedin.jpeg" >
+    
+  
+  <meta itemprop="name" content="Enterprise API Key Management System">
+  <meta itemprop="description" content="Built a comprehensive API key management system with role-based access control, multi-key support, and advanced security features including account protection and audit logging.">
+  <meta itemprop="datePublished" content="2025-09-11T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-09-11T00:00:00+00:00">
+  <meta itemprop="wordCount" content="825">
+  <meta itemprop="keywords" content="FastAPI,PostgreSQL,RBAC,Security,Python">
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.6fd5894c037c33653c04adc7fba0e5e3407a6e9fc3ac743ec566de299d8b0387.css" integrity="sha256-b9WJTAN8M2U8BK3H&#43;6Dl40B6bp/DrHQ&#43;xWbeKZ2LA4c=" media="screen">
+  
+  
+  <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.1fe76f09cacb3923b174c92c7929a66a989457f6569a9356f7a693ae312b964a.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="https://udaydahiya.org/" title="Home">
+      <span class="f4 fw7">Uday | Portfolio</span>
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/" title="Home">Home</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/project/" title="Projects">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/reads/" title="Reads">Reads</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/post/" title="Blog">Blog</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Enterprise API Key Management System</h1>
+        <h4 class="f4 mt0 mb4 lh-title measure">Production-ready FastAPI server with RBAC and security monitoring</h4>
+        <p class="f6 measure lh-copy mv1">By Uday in <a href="https://udaydahiya.org/categories/backend">Backend</a>  <a href="https://udaydahiya.org/categories/security">Security</a>  <a href="https://udaydahiya.org/categories/api-development">API Development</a> </p>
+        <p class="f7 db mv0 ttu">September 11, 2025</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        <p><img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&amp;h=400&amp;fit=crop" alt=""></p>
+<div class="project-highlights">
+  <div class="highlight-stat">
+    <span class="stat-number">21+</span>
+    <span class="stat-label">Granular permissions</span>
+  </div>
+  <div class="highlight-stat">
+    <span class="stat-number">Multi-key</span>
+    <span class="stat-label">API key management</span>
+  </div>
+  <div class="highlight-stat">
+    <span class="stat-number">RBAC</span>
+    <span class="stat-label">Role-based access control</span>
+  </div>
+</div>
+
+
+
+
+<h2 id="the-challenge">The Challenge
+  <a href="#the-challenge"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Enterprise APIs need robust security and access control:</p>
+<ul>
+<li><strong>Key sprawl</strong>: Multiple API keys across teams without centralized management</li>
+<li><strong>No granular control</strong>: All-or-nothing access instead of permission-based</li>
+<li><strong>Security gaps</strong>: No tracking of failed attempts or suspicious activity</li>
+<li><strong>Audit requirements</strong>: Compliance needs for usage logging and monitoring</li>
+</ul>
+
+
+
+
+<h2 id="the-solution">The Solution
+  <a href="#the-solution"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Built a production-ready FastAPI server with comprehensive API key management featuring:</p>
+<ul>
+<li><strong>Multi-API key support</strong> with secure hashing and database backing</li>
+<li><strong>Role-based access control (RBAC)</strong> with 21+ default permissions across 8 categories</li>
+<li><strong>Security monitoring</strong> with account locking, failed login tracking, and activity logging</li>
+<li><strong>Admin interface</strong> for system management and user oversight</li>
+</ul>
+
+
+
+
+<h3 id="architecture">Architecture
+  <a href="#architecture"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#1f2328">[</span>Client Request<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f6f8fa;background-color:#82071e">↓</span> <span style="color:#1f2328">(</span>API Key <span style="color:#0550ae">in</span> Header<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span>Authentication Middleware<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f6f8fa;background-color:#82071e">↓</span> <span style="color:#1f2328">(</span>Verify <span style="color:#0550ae">&amp;</span> Hash Check<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span>Permission Validator<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f6f8fa;background-color:#82071e">↓</span> <span style="color:#1f2328">(</span>Check RBAC Permissions<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span>Rate Limiter <span style="color:#0550ae">/</span> Usage Logger<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f6f8fa;background-color:#82071e">↓</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span>Protected Endpoint<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f6f8fa;background-color:#82071e">↓</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span>PostgreSQL Database<span style="color:#1f2328">]</span>
+</span></span></code></pre></div><p><strong>Tech Stack</strong>: FastAPI, PostgreSQL, AsyncIO, SQLAlchemy, Alembic, Docker</p>
+
+
+
+
+<h2 id="key-features">Key Features
+  <a href="#key-features"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="multi-api-key-management">Multi-API Key Management
+  <a href="#multi-api-key-management"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">APIKey</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">id</span><span style="color:#1f2328">:</span> UUID
+</span></span><span style="display:flex;"><span>    user_id<span style="color:#1f2328">:</span> UUID
+</span></span><span style="display:flex;"><span>    key_hash<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span>  <span style="color:#57606a"># Securely hashed</span>
+</span></span><span style="display:flex;"><span>    name<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span>  <span style="color:#57606a"># e.g., &#34;Production API&#34;, &#34;Dev Environment&#34;</span>
+</span></span><span style="display:flex;"><span>    permissions<span style="color:#1f2328">:</span> JSONB  <span style="color:#57606a"># Granular permission array</span>
+</span></span><span style="display:flex;"><span>    last_used<span style="color:#1f2328">:</span> timestamp
+</span></span><span style="display:flex;"><span>    expiration_date<span style="color:#1f2328">:</span> Optional<span style="color:#1f2328">[</span>date<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>    is_active<span style="color:#1f2328">:</span> <span style="color:#6639ba">bool</span>
+</span></span></code></pre></div>
+
+
+
+<h3 id="permission-categories-21-permissions">Permission Categories (21+ Permissions)
+  <a href="#permission-categories-21-permissions"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>User Management</strong>: Create, read, update, delete users</li>
+<li><strong>API Key Operations</strong>: Generate, revoke, list keys</li>
+<li><strong>Permissions Management</strong>: Assign, revoke permissions</li>
+<li><strong>System Monitoring</strong>: Health checks, diagnostics</li>
+<li><strong>Logs Management</strong>: View, export audit logs</li>
+<li><strong>System Administration</strong>: System configuration</li>
+<li><strong>Analytics</strong>: Usage reports, metrics</li>
+<li><strong>Protected Operations</strong>: Sensitive operations</li>
+</ul>
+
+
+
+
+<h3 id="security-features">Security Features
+  <a href="#security-features"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p><strong>Account Protection</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">SecurityMonitor</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">track_login_attempt</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> api_key<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span><span style="color:#1f2328">,</span> success<span style="color:#1f2328">:</span> <span style="color:#6639ba">bool</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span> <span style="color:#0550ae">not</span> success<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            failed_attempts<span style="color:#1f2328">[</span>api_key<span style="color:#1f2328">]</span> <span style="color:#0550ae">+=</span> <span style="color:#0550ae">1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span> failed_attempts<span style="color:#1f2328">[</span>api_key<span style="color:#1f2328">]</span> <span style="color:#0550ae">&gt;=</span> MAX_ATTEMPTS<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>                lock_account<span style="color:#1f2328">(</span>api_key<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                trigger_security_alert<span style="color:#1f2328">(</span>api_key<span style="color:#1f2328">)</span>
+</span></span></code></pre></div><p><strong>Usage Tracking</strong>:</p>
+<ul>
+<li>Every API call logged with timestamp, endpoint, user, result</li>
+<li>Security events detection (unusual patterns, brute force attempts)</li>
+<li>Real-time monitoring dashboard</li>
+</ul>
+
+
+
+
+<h3 id="database-schema">Database Schema
+  <a href="#database-schema"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#57606a">-- Core tables
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">CREATE</span><span style="color:#fff"> </span><span style="color:#cf222e">TABLE</span><span style="color:#fff"> </span>users<span style="color:#fff"> </span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>id<span style="color:#fff"> </span>UUID<span style="color:#fff"> </span><span style="color:#cf222e">PRIMARY</span><span style="color:#fff"> </span><span style="color:#cf222e">KEY</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>email<span style="color:#fff"> </span><span style="color:#6639ba">VARCHAR</span><span style="color:#1f2328">(</span><span style="color:#0550ae">255</span><span style="color:#1f2328">)</span><span style="color:#fff"> </span><span style="color:#cf222e">UNIQUE</span><span style="color:#fff"> </span><span style="color:#cf222e">NOT</span><span style="color:#fff"> </span><span style="color:#cf222e">NULL</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>api_key_hash<span style="color:#fff"> </span><span style="color:#6639ba">VARCHAR</span><span style="color:#1f2328">(</span><span style="color:#0550ae">255</span><span style="color:#1f2328">)</span><span style="color:#fff"> </span><span style="color:#cf222e">NOT</span><span style="color:#fff"> </span><span style="color:#cf222e">NULL</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>subscription_tier<span style="color:#fff"> </span><span style="color:#6639ba">VARCHAR</span><span style="color:#1f2328">(</span><span style="color:#0550ae">50</span><span style="color:#1f2328">),</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>is_locked<span style="color:#fff"> </span><span style="color:#6639ba">BOOLEAN</span><span style="color:#fff"> </span><span style="color:#cf222e">DEFAULT</span><span style="color:#fff"> </span><span style="color:#cf222e">FALSE</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>created_at<span style="color:#fff"> </span><span style="color:#cf222e">TIMESTAMP</span><span style="color:#fff"> </span><span style="color:#cf222e">DEFAULT</span><span style="color:#fff"> </span>NOW<span style="color:#1f2328">()</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#cf222e">CREATE</span><span style="color:#fff"> </span><span style="color:#cf222e">TABLE</span><span style="color:#fff"> </span>api_keys<span style="color:#fff"> </span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>id<span style="color:#fff"> </span>UUID<span style="color:#fff"> </span><span style="color:#cf222e">PRIMARY</span><span style="color:#fff"> </span><span style="color:#cf222e">KEY</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>user_id<span style="color:#fff"> </span>UUID<span style="color:#fff"> </span><span style="color:#cf222e">REFERENCES</span><span style="color:#fff"> </span>users<span style="color:#1f2328">(</span>id<span style="color:#1f2328">),</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>key_hash<span style="color:#fff"> </span><span style="color:#6639ba">VARCHAR</span><span style="color:#1f2328">(</span><span style="color:#0550ae">255</span><span style="color:#1f2328">)</span><span style="color:#fff"> </span><span style="color:#cf222e">NOT</span><span style="color:#fff"> </span><span style="color:#cf222e">NULL</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>name<span style="color:#fff"> </span><span style="color:#6639ba">VARCHAR</span><span style="color:#1f2328">(</span><span style="color:#0550ae">100</span><span style="color:#1f2328">)</span><span style="color:#fff"> </span><span style="color:#cf222e">NOT</span><span style="color:#fff"> </span><span style="color:#cf222e">NULL</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>permissions<span style="color:#fff"> </span>JSONB<span style="color:#fff"> </span><span style="color:#cf222e">NOT</span><span style="color:#fff"> </span><span style="color:#cf222e">NULL</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>last_used<span style="color:#fff"> </span><span style="color:#cf222e">TIMESTAMP</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>expiration_date<span style="color:#fff"> </span><span style="color:#6639ba">DATE</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>created_at<span style="color:#fff"> </span><span style="color:#cf222e">TIMESTAMP</span><span style="color:#fff"> </span><span style="color:#cf222e">DEFAULT</span><span style="color:#fff"> </span>NOW<span style="color:#1f2328">()</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#cf222e">CREATE</span><span style="color:#fff"> </span><span style="color:#cf222e">TABLE</span><span style="color:#fff"> </span>api_usage<span style="color:#fff"> </span><span style="color:#1f2328">(</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>id<span style="color:#fff"> </span>UUID<span style="color:#fff"> </span><span style="color:#cf222e">PRIMARY</span><span style="color:#fff"> </span><span style="color:#cf222e">KEY</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>user_id<span style="color:#fff"> </span>UUID<span style="color:#fff"> </span><span style="color:#cf222e">REFERENCES</span><span style="color:#fff"> </span>users<span style="color:#1f2328">(</span>id<span style="color:#1f2328">),</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>api_key_id<span style="color:#fff"> </span>UUID<span style="color:#fff"> </span><span style="color:#cf222e">REFERENCES</span><span style="color:#fff"> </span>api_keys<span style="color:#1f2328">(</span>id<span style="color:#1f2328">),</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>endpoint<span style="color:#fff"> </span><span style="color:#6639ba">VARCHAR</span><span style="color:#1f2328">(</span><span style="color:#0550ae">255</span><span style="color:#1f2328">)</span><span style="color:#fff"> </span><span style="color:#cf222e">NOT</span><span style="color:#fff"> </span><span style="color:#cf222e">NULL</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#cf222e">method</span><span style="color:#fff"> </span><span style="color:#6639ba">VARCHAR</span><span style="color:#1f2328">(</span><span style="color:#0550ae">10</span><span style="color:#1f2328">)</span><span style="color:#fff"> </span><span style="color:#cf222e">NOT</span><span style="color:#fff"> </span><span style="color:#cf222e">NULL</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>status_code<span style="color:#fff"> </span><span style="color:#6639ba">INTEGER</span><span style="color:#fff"> </span><span style="color:#cf222e">NOT</span><span style="color:#fff"> </span><span style="color:#cf222e">NULL</span><span style="color:#1f2328">,</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span>created_at<span style="color:#fff"> </span><span style="color:#cf222e">TIMESTAMP</span><span style="color:#fff"> </span><span style="color:#cf222e">DEFAULT</span><span style="color:#fff"> </span>NOW<span style="color:#1f2328">()</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#1f2328">);</span><span style="color:#fff">
+</span></span></span></code></pre></div>
+
+
+
+<h2 id="implementation-highlights">Implementation Highlights
+  <a href="#implementation-highlights"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="async-permission-checker">Async Permission Checker
+  <a href="#async-permission-checker"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">fastapi</span> <span style="color:#cf222e">import</span> Header<span style="color:#1f2328">,</span> HTTPException
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">from</span> <span style="color:#24292e">typing</span> <span style="color:#cf222e">import</span> List
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">async</span> <span style="color:#cf222e">def</span> <span style="color:#6639ba">check_permissions</span><span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>    required_permissions<span style="color:#1f2328">:</span> List<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>    api_key<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span> <span style="color:#0550ae">=</span> Header<span style="color:#1f2328">(</span>alias<span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;X-API-Key&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-&gt;</span> User<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Verify API key</span>
+</span></span><span style="display:flex;"><span>    key_record <span style="color:#0550ae">=</span> <span style="color:#cf222e">await</span> db<span style="color:#0550ae">.</span>get_api_key<span style="color:#1f2328">(</span>api_key<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span> <span style="color:#0550ae">not</span> key_record <span style="color:#0550ae">or</span> <span style="color:#0550ae">not</span> key_record<span style="color:#0550ae">.</span>is_active<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">raise</span> HTTPException<span style="color:#1f2328">(</span>status_code<span style="color:#0550ae">=</span><span style="color:#0550ae">401</span><span style="color:#1f2328">,</span> detail<span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;Invalid API key&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Check if account is locked</span>
+</span></span><span style="display:flex;"><span>    user <span style="color:#0550ae">=</span> <span style="color:#cf222e">await</span> db<span style="color:#0550ae">.</span>get_user<span style="color:#1f2328">(</span>key_record<span style="color:#0550ae">.</span>user_id<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span> user<span style="color:#0550ae">.</span>is_locked<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">raise</span> HTTPException<span style="color:#1f2328">(</span>status_code<span style="color:#0550ae">=</span><span style="color:#0550ae">403</span><span style="color:#1f2328">,</span> detail<span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;Account locked&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Verify permissions</span>
+</span></span><span style="display:flex;"><span>    user_permissions <span style="color:#0550ae">=</span> <span style="color:#6639ba">set</span><span style="color:#1f2328">(</span>key_record<span style="color:#0550ae">.</span>permissions<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    required <span style="color:#0550ae">=</span> <span style="color:#6639ba">set</span><span style="color:#1f2328">(</span>required_permissions<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span> <span style="color:#0550ae">not</span> required<span style="color:#0550ae">.</span>issubset<span style="color:#1f2328">(</span>user_permissions<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">raise</span> HTTPException<span style="color:#1f2328">(</span>status_code<span style="color:#0550ae">=</span><span style="color:#0550ae">403</span><span style="color:#1f2328">,</span> detail<span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;Insufficient permissions&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Log usage</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">await</span> log_api_usage<span style="color:#1f2328">(</span>user<span style="color:#1f2328">,</span> key_record<span style="color:#1f2328">,</span> request<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> user
+</span></span></code></pre></div>
+
+
+
+<h3 id="protected-endpoints">Protected Endpoints
+  <a href="#protected-endpoints"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#0550ae">@app.get</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;/api/v1/users&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">async</span> <span style="color:#cf222e">def</span> <span style="color:#6639ba">list_users</span><span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>    user<span style="color:#1f2328">:</span> User <span style="color:#0550ae">=</span> Depends<span style="color:#1f2328">(</span>check_permissions<span style="color:#1f2328">([</span><span style="color:#0a3069">&#34;users:read&#34;</span><span style="color:#1f2328">]))</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#cf222e">await</span> db<span style="color:#0550ae">.</span>query_users<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">@app.delete</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;/api/v1/users/</span><span style="color:#0a3069">{user_id}</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">async</span> <span style="color:#cf222e">def</span> <span style="color:#6639ba">delete_user</span><span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>    user_id<span style="color:#1f2328">:</span> UUID<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    user<span style="color:#1f2328">:</span> User <span style="color:#0550ae">=</span> Depends<span style="color:#1f2328">(</span>check_permissions<span style="color:#1f2328">([</span><span style="color:#0a3069">&#34;users:delete&#34;</span><span style="color:#1f2328">]))</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#cf222e">await</span> db<span style="color:#0550ae">.</span>delete_user<span style="color:#1f2328">(</span>user_id<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0550ae">@app.get</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;/api/v1/admin/analytics&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">async</span> <span style="color:#cf222e">def</span> <span style="color:#6639ba">get_analytics</span><span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>    user<span style="color:#1f2328">:</span> User <span style="color:#0550ae">=</span> Depends<span style="color:#1f2328">(</span>check_permissions<span style="color:#1f2328">([</span><span style="color:#0a3069">&#34;admin&#34;</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;analytics:read&#34;</span><span style="color:#1f2328">]))</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#cf222e">await</span> analytics_service<span style="color:#0550ae">.</span>generate_report<span style="color:#1f2328">()</span>
+</span></span></code></pre></div>
+
+
+
+<h3 id="api-key-generation">API Key Generation
+  <a href="#api-key-generation"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">secrets</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">import</span> <span style="color:#24292e">hashlib</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">generate_api_key</span><span style="color:#1f2328">(</span>user_id<span style="color:#1f2328">:</span> UUID<span style="color:#1f2328">,</span> name<span style="color:#1f2328">:</span> <span style="color:#6639ba">str</span><span style="color:#1f2328">,</span> permissions<span style="color:#1f2328">:</span> List<span style="color:#1f2328">[</span><span style="color:#6639ba">str</span><span style="color:#1f2328">]):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Generate secure random key</span>
+</span></span><span style="display:flex;"><span>    raw_key <span style="color:#0550ae">=</span> secrets<span style="color:#0550ae">.</span>token_urlsafe<span style="color:#1f2328">(</span><span style="color:#0550ae">32</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Hash for storage (never store plain text)</span>
+</span></span><span style="display:flex;"><span>    key_hash <span style="color:#0550ae">=</span> hashlib<span style="color:#0550ae">.</span>sha256<span style="color:#1f2328">(</span>raw_key<span style="color:#0550ae">.</span>encode<span style="color:#1f2328">())</span><span style="color:#0550ae">.</span>hexdigest<span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Store in database</span>
+</span></span><span style="display:flex;"><span>    api_key_record <span style="color:#0550ae">=</span> <span style="color:#cf222e">await</span> db<span style="color:#0550ae">.</span>create_api_key<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>        user_id<span style="color:#0550ae">=</span>user_id<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        key_hash<span style="color:#0550ae">=</span>key_hash<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        name<span style="color:#0550ae">=</span>name<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        permissions<span style="color:#0550ae">=</span>permissions
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a"># Return raw key ONCE (user must save it)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;api_key&#34;</span><span style="color:#1f2328">:</span> raw_key<span style="color:#1f2328">,</span>  <span style="color:#57606a"># Only shown once</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;name&#34;</span><span style="color:#1f2328">:</span> name<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;permissions&#34;</span><span style="color:#1f2328">:</span> permissions<span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#0a3069">&#34;created_at&#34;</span><span style="color:#1f2328">:</span> api_key_record<span style="color:#0550ae">.</span>created_at
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span></code></pre></div>
+
+
+
+<h2 id="api-structure">API Structure
+  <a href="#api-structure"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="public-endpoints">Public Endpoints
+  <a href="#public-endpoints"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><code>GET /health</code> - Health check</li>
+<li><code>GET /status</code> - System status</li>
+</ul>
+
+
+
+
+<h3 id="user-endpoints">User Endpoints
+  <a href="#user-endpoints"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><code>GET /api/v1/profile</code> - User profile</li>
+<li><code>GET /api/v1/orders</code> - User orders</li>
+<li><code>POST /api/v1/api-keys</code> - Generate new API key</li>
+<li><code>GET /api/v1/api-keys</code> - List user&rsquo;s API keys</li>
+</ul>
+
+
+
+
+<h3 id="admin-endpoints">Admin Endpoints
+  <a href="#admin-endpoints"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><code>GET /api/v1/admin/users</code> - User management</li>
+<li><code>GET /api/v1/admin/analytics</code> - System analytics</li>
+<li><code>POST /api/v1/admin/permissions</code> - Permission management</li>
+<li><code>GET /api/v1/admin/logs</code> - Security audit logs</li>
+</ul>
+
+
+
+
+<h2 id="devops--infrastructure">DevOps &amp; Infrastructure
+  <a href="#devops--infrastructure"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="docker-setup">Docker Setup
+  <a href="#docker-setup"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#57606a"># docker-compose.yml</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#0550ae">services</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span><span style="color:#0550ae">api</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">build</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>.<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">ports</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">      </span>- <span style="color:#0a3069">&#34;8000:8000&#34;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">environment</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">      </span>- DATABASE_URL=${DATABASE_URL}<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">      </span>- SECRET_KEY=${SECRET_KEY}<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">depends_on</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">      </span>- db<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span><span style="color:#0550ae">db</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">image</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>postgres:15<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">environment</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">      </span>- POSTGRES_DB=api_keys<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">      </span>- POSTGRES_USER=admin<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">      </span>- POSTGRES_PASSWORD=${DB_PASSWORD}<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">volumes</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">      </span>- postgres_data:/var/lib/postgresql/data<span style="color:#fff">
+</span></span></span></code></pre></div>
+
+
+
+<h3 id="database-migrations">Database Migrations
+  <a href="#database-migrations"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>Alembic</strong> for version-controlled schema changes</li>
+<li>Automatic migration on deployment</li>
+<li>Rollback support for failed migrations</li>
+</ul>
+
+
+
+
+<h2 id="business-value">Business Value
+  <a href="#business-value"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="security-benefits">Security Benefits
+  <a href="#security-benefits"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>Zero plaintext keys stored</strong> - All keys securely hashed</li>
+<li><strong>Granular access control</strong> - 21+ permission levels</li>
+<li><strong>Audit trail</strong> - Complete logging for compliance</li>
+<li><strong>Account protection</strong> - Auto-locking on suspicious activity</li>
+</ul>
+
+
+
+
+<h3 id="operational-efficiency">Operational Efficiency
+  <a href="#operational-efficiency"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>Self-service key management</strong> - Users generate own keys</li>
+<li><strong>Easy permission updates</strong> - No code changes needed</li>
+<li><strong>Usage analytics</strong> - Track API consumption patterns</li>
+<li><strong>Multi-environment support</strong> - Separate keys for dev/staging/prod</li>
+</ul>
+
+
+
+
+<h3 id="scalability">Scalability
+  <a href="#scalability"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>Async architecture</strong> - Handle thousands of concurrent requests</li>
+<li><strong>Connection pooling</strong> - Efficient database usage</li>
+<li><strong>Horizontal scaling</strong> - Stateless API design</li>
+</ul>
+
+
+
+
+<h2 id="technical-decisions">Technical Decisions
+  <a href="#technical-decisions"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="why-fastapi">Why FastAPI?
+  <a href="#why-fastapi"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>Async support</strong> for high performance</li>
+<li><strong>Automatic API docs</strong> (Swagger UI, ReDoc)</li>
+<li><strong>Type safety</strong> with Pydantic models</li>
+<li><strong>Modern Python</strong> (3.10+) with async/await</li>
+</ul>
+
+
+
+
+<h3 id="why-postgresql">Why PostgreSQL?
+  <a href="#why-postgresql"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>JSONB support</strong> for flexible permission storage</li>
+<li><strong>ACID compliance</strong> for security-critical operations</li>
+<li><strong>Mature ecosystem</strong> with excellent Python support</li>
+</ul>
+<hr>
+<p><em>Enterprise-grade API security with developer-friendly management</em></p>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">September 11, 2025</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">4 minute read, 825 words</dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Categories:</dt>
+    <dd class="fw5 ml0"> <a href="https://udaydahiya.org/categories/backend">Backend</a>  <a href="https://udaydahiya.org/categories/security">Security</a>  <a href="https://udaydahiya.org/categories/api-development">API Development</a> </dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Tags:</dt>
+    <dd class="fw5 ml0"> <a href="https://udaydahiya.org/tags/fastapi">FastAPI</a>  <a href="https://udaydahiya.org/tags/postgresql">PostgreSQL</a>  <a href="https://udaydahiya.org/tags/rbac">RBAC</a>  <a href="https://udaydahiya.org/tags/security">Security</a>  <a href="https://udaydahiya.org/tags/python">Python</a> </dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+    <dd class="fw5 ml0"><a href="/project/enterprise-etl-pipeline/">Enterprise ETL Pipeline</a></dd>
+    
+    <dd class="fw5 ml0"><a href="/project/ai-research-agent/">AI Research Agent for Medical ML</a></dd>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="prev dtc pr2 tl v-top fw6"
+    href="https://udaydahiya.org/project/unified-api-gateway/">&larr; Unified AI API Gateway</a>
+  
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="https://udaydahiya.org/project/enterprise-etl-pipeline/">Enterprise ETL Pipeline &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2025
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/Uday-461" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.linkedin.com/in/uday-dahiya-59001113b/" title="linkedin" target="_blank" rel="me noopener">
+      <i class="fab fa-linkedin fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="https://github.com/Uday-461" title="GitHub">GitHub</a>
+      
+    </div>
+  </nav>
+  
+</footer>
+
+      </div>
+    </body>
+</html>

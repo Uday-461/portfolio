@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Design on Uday | Portfolio</title>
-    <link>http://localhost:1314/categories/design/</link>
+    <link>https://udaydahiya.org/categories/design/</link>
     <description>Recent content in Design on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 15 Mar 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/categories/design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://udaydahiya.org/categories/design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building for Emergence</title>
-      <link>http://localhost:1314/reads/building-for-emergence/</link>
+      <link>https://udaydahiya.org/reads/building-for-emergence/</link>
       <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/reads/building-for-emergence/</guid>
+      <guid>https://udaydahiya.org/reads/building-for-emergence/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&amp;amp;h=400&amp;amp;fit=crop&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;An exploration of how we can design digital systems that evolve and adapt over time, rather than trying to specify every behavior upfront. Critical thinking for anyone building complex digital systems.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;core-concepts&#34;&gt;Core Concepts&#xA;  &lt;a href=&#34;#core-concepts&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; aria-hidden=&#34;true&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&#xA;      &lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&#xA;      &lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;&#xA;    &lt;/svg&gt;&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;h3 id=&#34;what-is-emergence&#34;&gt;What is Emergence?&#xA;  &lt;a href=&#34;#what-is-emergence&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; aria-hidden=&#34;true&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&#xA;      &lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&#xA;      &lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;&#xA;    &lt;/svg&gt;&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Emergence occurs when simple rules and interactions at a micro-level create complex, unpredictable patterns at a macro-level.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Design for Emergence</title>
-      <link>http://localhost:1314/reads/design-for-emergence/</link>
+      <link>https://udaydahiya.org/reads/design-for-emergence/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/reads/design-for-emergence/</guid>
+      <guid>https://udaydahiya.org/reads/design-for-emergence/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&amp;amp;h=400&amp;amp;fit=crop&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Explores how complex, adaptive behaviors emerge from simple rules and interactions. Fundamental for understanding both natural and artificial systems.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;the-core-thesis&#34;&gt;The Core Thesis&#xA;  &lt;a href=&#34;#the-core-thesis&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; aria-hidden=&#34;true&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&#xA;      &lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&#xA;      &lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;&#xA;    &lt;/svg&gt;&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Emergence&lt;/strong&gt; happens when simple components follow simple rules, creating complex collective behavior that&amp;rsquo;s not present in any individual component.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key insight:&lt;/strong&gt; We don&amp;rsquo;t need to design complex systems-we need to design simple systems that can become complex.&lt;/p&gt;</description>
     </item>
   </channel>

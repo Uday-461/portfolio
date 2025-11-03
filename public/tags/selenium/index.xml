@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selenium on Uday | Portfolio</title>
+    <link>https://udaydahiya.org/tags/selenium/</link>
+    <description>Recent content in Selenium on Uday | Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://udaydahiya.org/tags/selenium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enterprise ETL Pipeline</title>
+      <link>https://udaydahiya.org/project/enterprise-etl-pipeline/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/enterprise-etl-pipeline/</guid>
+      <description>Built a modular ETL system that reduces manual data collection time by 90%, extracting data from multiple sources via APIs and browser automation into a unified PostgreSQL warehouse.</description>
+    </item>
+  </channel>
+</rss>

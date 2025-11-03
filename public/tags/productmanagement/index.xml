@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ProductManagement on Uday | Portfolio</title>
-    <link>http://localhost:1314/tags/productmanagement/</link>
+    <link>https://udaydahiya.org/tags/productmanagement/</link>
     <description>Recent content in ProductManagement on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/productmanagement/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://udaydahiya.org/tags/productmanagement/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Product is Applied Systems Design</title>
-      <link>http://localhost:1314/post/product-is-systems-design/</link>
+      <link>https://udaydahiya.org/post/product-is-systems-design/</link>
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/product-is-systems-design/</guid>
+      <guid>https://udaydahiya.org/post/product-is-systems-design/</guid>
       <description>An exploration of how systems thinking principles can transform product development and lead to more resilient, adaptable solutions.</description>
     </item>
   </channel>

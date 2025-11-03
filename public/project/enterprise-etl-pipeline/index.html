@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.152.1">
+<title>Enterprise ETL Pipeline | Uday | Portfolio</title>
+
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="Automated data extraction from APIs and dashboards to PostgreSQL">
+
+
+<meta property="og:site_name" content="Uday | Portfolio">
+<meta property="og:title" content="Enterprise ETL Pipeline | Uday | Portfolio">
+<meta property="og:description" content="Automated data extraction from APIs and dashboards to PostgreSQL" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="https://udaydahiya.org/project/enterprise-etl-pipeline/" />
+<meta property="og:locale" content="en-us">
+
+
+
+
+    
+        <meta property="og:image" content="https://udaydahiya.org/img/uday_linkedin.jpeg" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://udaydahiya.org/img/uday_linkedin.jpeg" >
+    
+  
+  <meta itemprop="name" content="Enterprise ETL Pipeline">
+  <meta itemprop="description" content="Built a modular ETL system that reduces manual data collection time by 90%, extracting data from multiple sources via APIs and browser automation into a unified PostgreSQL warehouse.">
+  <meta itemprop="datePublished" content="2025-09-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-09-01T00:00:00+00:00">
+  <meta itemprop="wordCount" content="655">
+  <meta itemprop="keywords" content="Python,PostgreSQL,ETL,Selenium,Data Pipeline">
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.6fd5894c037c33653c04adc7fba0e5e3407a6e9fc3ac743ec566de299d8b0387.css" integrity="sha256-b9WJTAN8M2U8BK3H&#43;6Dl40B6bp/DrHQ&#43;xWbeKZ2LA4c=" media="screen">
+  
+  
+  <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.1fe76f09cacb3923b174c92c7929a66a989457f6569a9356f7a693ae312b964a.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="https://udaydahiya.org/" title="Home">
+      <span class="f4 fw7">Uday | Portfolio</span>
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/" title="Home">Home</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/project/" title="Projects">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/reads/" title="Reads">Reads</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/post/" title="Blog">Blog</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Enterprise ETL Pipeline</h1>
+        <h4 class="f4 mt0 mb4 lh-title measure">Automated data extraction from APIs and dashboards to PostgreSQL</h4>
+        <p class="f6 measure lh-copy mv1">By Uday in <a href="https://udaydahiya.org/categories/data-engineering">Data Engineering</a>  <a href="https://udaydahiya.org/categories/backend">Backend</a>  <a href="https://udaydahiya.org/categories/automation">Automation</a> </p>
+        <p class="f7 db mv0 ttu">September 1, 2025</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        <p><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&amp;h=400&amp;fit=crop" alt=""></p>
+<div class="project-highlights">
+  <div class="highlight-stat">
+    <span class="stat-number">90%</span>
+    <span class="stat-label">Reduction in data collection time</span>
+  </div>
+  <div class="highlight-stat">
+    <span class="stat-number">99.9%</span>
+    <span class="stat-label">Data accuracy</span>
+  </div>
+  <div class="highlight-stat">
+    <span class="stat-number">6</span>
+    <span class="stat-label">Data sources automated</span>
+  </div>
+</div>
+
+
+
+
+<h2 id="the-challenge">The Challenge
+  <a href="#the-challenge"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>E-commerce businesses struggle with fragmented operational data across multiple systems:</p>
+<ul>
+<li><strong>Data silos</strong>: Customer data in buyer app, vendor data in seller app, payments in Razorpay, monitoring in Power BI</li>
+<li><strong>Manual reporting</strong>: Analysts manually export CSVs from 5+ systems, consuming 10-15 hours/week</li>
+<li><strong>Delayed insights</strong>: 24-48 hour data lag prevents real-time decision making</li>
+<li><strong>Browser automation challenges</strong>: Power BI dashboards require manual login and export</li>
+</ul>
+
+
+
+
+<h2 id="the-solution">The Solution
+  <a href="#the-solution"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Built an enterprise-grade ETL pipeline that:</p>
+<ul>
+<li>Extracts data from <strong>APIs</strong> (buyer/seller apps, Razorpay) and <strong>UI sources</strong> (Power BI dashboards via Selenium)</li>
+<li>Supports <strong>parallel and sequential</strong> processing modes per source</li>
+<li>Uses <strong>configurable chunking</strong> (1-30 day ranges) for optimal performance</li>
+<li>Loads data into <strong>PostgreSQL</strong> using high-speed COPY operations</li>
+<li>Provides <strong>per-source isolation</strong> with independent storage and retry logic</li>
+</ul>
+
+
+
+
+<h3 id="architecture">Architecture
+  <a href="#architecture"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#1f2328">[</span>Data Sources<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">├─</span> API Sources <span style="color:#1f2328">(</span>Orders<span style="color:#1f2328">,</span> Tickets<span style="color:#1f2328">,</span> Payments<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">└─</span> UI Sources <span style="color:#1f2328">(</span>Power BI Dashboards<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f6f8fa;background-color:#82071e">↓</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span>Extraction Layer<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">├─</span> API Extractors <span style="color:#1f2328">(</span>HTTP clients<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">└─</span> UI Extractors <span style="color:#1f2328">(</span>Selenium automation<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f6f8fa;background-color:#82071e">↓</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span>Chunking Engine<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">├─</span> Date <span style="color:#6639ba">range</span> splitting <span style="color:#1f2328">(</span>configurable per source<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">└─</span> Chunk queue management
+</span></span><span style="display:flex;"><span>       <span style="color:#f6f8fa;background-color:#82071e">↓</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span>Execution Engine<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">├─</span> Parallel Workers <span style="color:#1f2328">(</span>Process Pool<span style="color:#1f2328">,</span> <span style="color:#0550ae">3</span><span style="color:#0550ae">-</span><span style="color:#0550ae">5</span>x faster<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">└─</span> Sequential Processor <span style="color:#1f2328">(</span>Stable <span style="color:#cf222e">for</span> UI<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f6f8fa;background-color:#82071e">↓</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span>Storage Layer<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">├─</span> Raw CSV files <span style="color:#1f2328">(</span>per chunk<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">└─</span> Aggregated data <span style="color:#1f2328">(</span>per source<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f6f8fa;background-color:#82071e">↓</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span>PostgreSQL Database<span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">└─</span> Bulk COPY <span style="color:#1f2328">(</span><span style="color:#0550ae">50</span>K<span style="color:#0550ae">+</span> rows<span style="color:#0550ae">/</span>sec<span style="color:#1f2328">)</span>
+</span></span></code></pre></div><p><strong>Tech Stack</strong>: Python, PostgreSQL, Selenium, AsyncIO, YAML</p>
+
+
+
+
+<h2 id="key-features">Key Features
+  <a href="#key-features"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="intelligent-processing-modes">Intelligent Processing Modes
+  <a href="#intelligent-processing-modes"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>Parallel execution</strong> for API sources (3-5x speedup)</li>
+<li><strong>Sequential processing</strong> for browser automation (stability)</li>
+<li><strong>Per-source configuration</strong> for chunk sizes and execution modes</li>
+</ul>
+
+
+
+
+<h3 id="modular-architecture">Modular Architecture
+  <a href="#modular-architecture"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>core<span style="color:#0550ae">/</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">├──</span> config_manager<span style="color:#0550ae">.</span>py      <span style="color:#57606a"># YAML-based configuration</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">├──</span> chunk_manager<span style="color:#0550ae">.</span>py       <span style="color:#57606a"># Date range chunking</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">├──</span> execution_engine<span style="color:#0550ae">.</span>py    <span style="color:#57606a"># Parallel/sequential execution</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">├──</span> storage_manager<span style="color:#0550ae">.</span>py     <span style="color:#57606a"># Per-source storage</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">└──</span> upload_manager<span style="color:#0550ae">.</span>py      <span style="color:#57606a"># PostgreSQL COPY operations</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>extractors<span style="color:#0550ae">/</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">├──</span> base_extractor<span style="color:#0550ae">.</span>py      <span style="color:#57606a"># Abstract base class</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">├──</span> api_extractors<span style="color:#0550ae">/</span>        <span style="color:#57606a"># HTTP-based sources</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f6f8fa;background-color:#82071e">└──</span> ui_extractors<span style="color:#0550ae">/</span>         <span style="color:#57606a"># Selenium-based extraction</span>
+</span></span></code></pre></div>
+
+
+
+<h3 id="hybrid-data-extraction">Hybrid Data Extraction
+  <a href="#hybrid-data-extraction"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p><strong>API Extraction</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">async</span> <span style="color:#cf222e">def</span> <span style="color:#6639ba">extract_orders</span><span style="color:#1f2328">(</span>start_date<span style="color:#1f2328">,</span> end_date<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">async</span> <span style="color:#cf222e">with</span> aiohttp<span style="color:#0550ae">.</span>ClientSession<span style="color:#1f2328">()</span> <span style="color:#cf222e">as</span> session<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        response <span style="color:#0550ae">=</span> <span style="color:#cf222e">await</span> session<span style="color:#0550ae">.</span>get<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">f</span><span style="color:#0a3069">&#39;/api/orders?start=</span><span style="color:#0a3069">{</span>start_date<span style="color:#0a3069">}</span><span style="color:#0a3069">&amp;end=</span><span style="color:#0a3069">{</span>end_date<span style="color:#0a3069">}</span><span style="color:#0a3069">&#39;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#cf222e">await</span> response<span style="color:#0550ae">.</span>json<span style="color:#1f2328">()</span>
+</span></span></code></pre></div><p><strong>UI Extraction</strong> (Power BI):</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">PowerBIExtractor</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">extract_data</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> start_date<span style="color:#1f2328">,</span> end_date<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>driver<span style="color:#0550ae">.</span>get<span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;https://powerbi.com/reports/...&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>apply_date_filter<span style="color:#1f2328">(</span>start_date<span style="color:#1f2328">,</span> end_date<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        table <span style="color:#0550ae">=</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>driver<span style="color:#0550ae">.</span>find_element<span style="color:#1f2328">(</span>By<span style="color:#0550ae">.</span>CSS<span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;.pivotTable&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#6a737d">self</span><span style="color:#0550ae">.</span>parse_table_data<span style="color:#1f2328">(</span>table<span style="color:#1f2328">)</span>
+</span></span></code></pre></div>
+
+
+
+<h3 id="high-speed-database-loading">High-Speed Database Loading
+  <a href="#high-speed-database-loading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#57606a"># PostgreSQL COPY: 50,000-100,000 rows/sec</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">bulk_load</span><span style="color:#1f2328">(</span>csv_file<span style="color:#1f2328">,</span> table_name<span style="color:#1f2328">,</span> mode<span style="color:#0550ae">=</span><span style="color:#0a3069">&#39;append&#39;</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span> mode <span style="color:#0550ae">==</span> <span style="color:#0a3069">&#39;replace&#39;</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        cursor<span style="color:#0550ae">.</span>execute<span style="color:#1f2328">(</span><span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;TRUNCATE TABLE </span><span style="color:#0a3069">{</span>table_name<span style="color:#0a3069">}</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">with</span> <span style="color:#6639ba">open</span><span style="color:#1f2328">(</span>csv_file<span style="color:#1f2328">,</span> <span style="color:#0a3069">&#39;r&#39;</span><span style="color:#1f2328">)</span> <span style="color:#cf222e">as</span> f<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        cursor<span style="color:#0550ae">.</span>copy_expert<span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#0a3069">f</span><span style="color:#0a3069">&#34;COPY </span><span style="color:#0a3069">{</span>table_name<span style="color:#0a3069">}</span><span style="color:#0a3069"> FROM STDIN WITH CSV&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>            f
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    conn<span style="color:#0550ae">.</span>commit<span style="color:#1f2328">()</span>
+</span></span></code></pre></div>
+
+
+
+<h2 id="implementation-highlights">Implementation Highlights
+  <a href="#implementation-highlights"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="date-chunking-algorithm">Date Chunking Algorithm
+  <a href="#date-chunking-algorithm"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li>Splits large date ranges into manageable chunks (configurable per source)</li>
+<li>Prevents memory overflow and API overload</li>
+<li>Enables resumable execution (failed chunks can be retried)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">def</span> <span style="color:#6639ba">generate_chunks</span><span style="color:#1f2328">(</span>start<span style="color:#1f2328">,</span> end<span style="color:#1f2328">,</span> chunk_size_days<span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>    chunks <span style="color:#0550ae">=</span> <span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span>    current <span style="color:#0550ae">=</span> start
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">while</span> current <span style="color:#0550ae">&lt;=</span> end<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>        chunk_end <span style="color:#0550ae">=</span> <span style="color:#6639ba">min</span><span style="color:#1f2328">(</span>current <span style="color:#0550ae">+</span> timedelta<span style="color:#1f2328">(</span>days<span style="color:#0550ae">=</span>chunk_size_days <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">),</span> end<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        chunks<span style="color:#0550ae">.</span>append<span style="color:#1f2328">((</span>current<span style="color:#1f2328">,</span> chunk_end<span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span>        current <span style="color:#0550ae">=</span> chunk_end <span style="color:#0550ae">+</span> timedelta<span style="color:#1f2328">(</span>days<span style="color:#0550ae">=</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> chunks
+</span></span></code></pre></div>
+
+
+
+<h3 id="parallel-execution-engine">Parallel Execution Engine
+  <a href="#parallel-execution-engine"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">ParallelExecutor</span><span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">def</span> <span style="color:#6639ba">execute</span><span style="color:#1f2328">(</span><span style="color:#6a737d">self</span><span style="color:#1f2328">,</span> extract_func<span style="color:#1f2328">,</span> chunks<span style="color:#1f2328">,</span> worker_count<span style="color:#0550ae">=</span><span style="color:#0550ae">4</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">with</span> Pool<span style="color:#1f2328">(</span>processes<span style="color:#0550ae">=</span>worker_count<span style="color:#1f2328">)</span> <span style="color:#cf222e">as</span> pool<span style="color:#1f2328">:</span>
+</span></span><span style="display:flex;"><span>            results <span style="color:#0550ae">=</span> pool<span style="color:#0550ae">.</span>starmap<span style="color:#1f2328">(</span>extract_func<span style="color:#1f2328">,</span> chunks<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> results
+</span></span></code></pre></div>
+
+
+
+<h3 id="cli-interface">CLI Interface
+  <a href="#cli-interface"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#57606a"># Extract data from specific sources</span>
+</span></span><span style="display:flex;"><span>python main.py extract <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>    --start-date 2025-08-01 <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>    --end-date 2025-08-31 <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>    --sources buyer_orders,seller_orders <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>    --chunk-sizes <span style="color:#0a3069">&#34;buyer_orders:3,seller_orders:5&#34;</span> <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>    --execution-mode <span style="color:#0a3069">&#34;buyer_orders:parallel&#34;</span> <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>    --parallel-workers <span style="color:#0550ae">4</span> <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>    --upload
+</span></span></code></pre></div>
+
+
+
+<h2 id="business-impact">Business Impact
+  <a href="#business-impact"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="time-savings">Time Savings
+  <a href="#time-savings"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>15 hours/week → 1.5 hours/week</strong> per analyst (90% reduction)</li>
+<li><strong>24-48 hour delay → 15-minute refresh</strong> cycles</li>
+<li><strong>Zero manual CSV exports/imports</strong></li>
+</ul>
+
+
+
+
+<h3 id="cost-reduction">Cost Reduction
+  <a href="#cost-reduction"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>50% lower analytics labor</strong> (analysts focus on insights, not data wrangling)</li>
+<li><strong>Eliminated third-party BI connectors</strong> ($5K-15K/year saved)</li>
+<li><strong>Faster execution</strong>: Parallel processing completes in 1/3 the time</li>
+</ul>
+
+
+
+
+<h3 id="data-quality">Data Quality
+  <a href="#data-quality"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>99.9% accuracy</strong> with automated validation</li>
+<li><strong>12+ months historical data</strong> vs 30-90 days</li>
+<li><strong>Complete audit trail</strong> for compliance</li>
+</ul>
+
+
+
+
+<h2 id="technical-decisions">Technical Decisions
+  <a href="#technical-decisions"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="why-process-pool-over-thread-pool">Why Process Pool over Thread Pool?
+  <a href="#why-process-pool-over-thread-pool"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Python&rsquo;s GIL makes threads ineffective for CPU-bound work. Process pools provide true parallel execution on multi-core systems with isolation between workers.</p>
+
+
+
+
+<h3 id="why-csv-intermediate-storage">Why CSV Intermediate Storage?
+  <a href="#why-csv-intermediate-storage"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li>PostgreSQL COPY is <strong>10-50x faster</strong> than INSERT statements</li>
+<li>File-based checkpointing enables resume after failures</li>
+<li>Human-readable for debugging</li>
+</ul>
+
+
+
+
+<h3 id="why-per-source-isolation">Why Per-Source Isolation?
+  <a href="#why-per-source-isolation"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li>Prevents cross-contamination</li>
+<li>Independent retry logic</li>
+<li>Different upload strategies (append vs replace)</li>
+</ul>
+
+
+
+
+<h2 id="results">Results
+  <a href="#results"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="performance">Performance
+  <a href="#performance"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>API sources</strong>: 10,000-50,000 records/hour</li>
+<li><strong>UI sources</strong>: 1,000-5,000 records/hour</li>
+<li><strong>Parallel speedup</strong>: 3-5x faster than sequential</li>
+</ul>
+
+
+
+
+<h3 id="scalability">Scalability
+  <a href="#scalability"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li>Handles millions of records</li>
+<li>Horizontal scaling via worker count</li>
+<li>Suitable for daily/weekly/monthly runs</li>
+</ul>
+<hr>
+<p><em>Transforming fragmented data into actionable insights through intelligent automation</em></p>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">September 1, 2025</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">4 minute read, 655 words</dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Categories:</dt>
+    <dd class="fw5 ml0"> <a href="https://udaydahiya.org/categories/data-engineering">Data Engineering</a>  <a href="https://udaydahiya.org/categories/backend">Backend</a>  <a href="https://udaydahiya.org/categories/automation">Automation</a> </dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Tags:</dt>
+    <dd class="fw5 ml0"> <a href="https://udaydahiya.org/tags/python">Python</a>  <a href="https://udaydahiya.org/tags/postgresql">PostgreSQL</a>  <a href="https://udaydahiya.org/tags/etl">ETL</a>  <a href="https://udaydahiya.org/tags/selenium">Selenium</a>  <a href="https://udaydahiya.org/tags/data-pipeline">Data Pipeline</a> </dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+    <dd class="fw5 ml0"><a href="/project/api-key-management/">Enterprise API Key Management System</a></dd>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="prev dtc pr2 tl v-top fw6"
+    href="https://udaydahiya.org/project/api-key-management/">&larr; Enterprise API Key Management System</a>
+  
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="https://udaydahiya.org/project/vendor-job-marketplace/">Vendor-Job Marketplace Platform &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2025
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/Uday-461" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.linkedin.com/in/uday-dahiya-59001113b/" title="linkedin" target="_blank" rel="me noopener">
+      <i class="fab fa-linkedin fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="https://github.com/Uday-461" title="GitHub">GitHub</a>
+      
+    </div>
+  </nav>
+  
+</footer>
+
+      </div>
+    </body>
+</html>

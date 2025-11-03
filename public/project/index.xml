@@ -2,31 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A Project Portfolio To Grow on Uday | Portfolio</title>
-    <link>http://localhost:1313/project/</link>
+    <link>https://udaydahiya.org/project/</link>
     <description>Recent content in A Project Portfolio To Grow on Uday | Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://udaydahiya.org/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unified AI API Gateway</title>
+      <link>https://udaydahiya.org/project/unified-api-gateway/</link>
+      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/unified-api-gateway/</guid>
+      <description>Built an edge-native API gateway that unifies multiple AI providers, implements usage-based billing through a credit system, and supports Model Context Protocol for advanced AI applications.</description>
+    </item>
+    <item>
+      <title>Enterprise API Key Management System</title>
+      <link>https://udaydahiya.org/project/api-key-management/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/api-key-management/</guid>
+      <description>Built a comprehensive API key management system with role-based access control, multi-key support, and advanced security features including account protection and audit logging.</description>
+    </item>
+    <item>
+      <title>Enterprise ETL Pipeline</title>
+      <link>https://udaydahiya.org/project/enterprise-etl-pipeline/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/enterprise-etl-pipeline/</guid>
+      <description>Built a modular ETL system that reduces manual data collection time by 90%, extracting data from multiple sources via APIs and browser automation into a unified PostgreSQL warehouse.</description>
+    </item>
+    <item>
+      <title>Vendor-Job Marketplace Platform</title>
+      <link>https://udaydahiya.org/project/vendor-job-marketplace/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/vendor-job-marketplace/</guid>
+      <description>Built a marketplace platform that connects service vendors with job opportunities, featuring real-time matching, Supabase backend, and AI-assisted development with Lovable.</description>
+    </item>
+    <item>
+      <title>HR Vendor Management Portal</title>
+      <link>https://udaydahiya.org/project/hr-vendor-portal/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://udaydahiya.org/project/hr-vendor-portal/</guid>
+      <description>Built a modern vendor management platform for HR departments using Next.js and v0.dev, featuring automated workflows, document management, and integrated communication channels.</description>
+    </item>
     <item>
       <title>RAG-based Catalog System for ONDC</title>
-      <link>http://localhost:1313/project/rag-catalog-system/</link>
+      <link>https://udaydahiya.org/project/rag-catalog-system/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/rag-catalog-system/</guid>
+      <guid>https://udaydahiya.org/project/rag-catalog-system/</guid>
       <description>Built a retrieval-augmented generation system that understands complex product taxonomies and delivers instant, accurate results for e-commerce catalog management.</description>
     </item>
     <item>
       <title>AI Research Agent for Medical ML</title>
-      <link>http://localhost:1313/project/ai-research-agent/</link>
+      <link>https://udaydahiya.org/project/ai-research-agent/</link>
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/ai-research-agent/</guid>
+      <guid>https://udaydahiya.org/project/ai-research-agent/</guid>
       <description>Created an intelligent agent that helps doctors and researchers automatically generate, test, and validate machine learning pipelines for their specific research needs.</description>
     </item>
     <item>
       <title>Modular AI Platform with Supabase &amp; Hugging Face</title>
-      <link>http://localhost:1313/project/modular-ai-platform/</link>
+      <link>https://udaydahiya.org/project/modular-ai-platform/</link>
       <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/modular-ai-platform/</guid>
+      <guid>https://udaydahiya.org/project/modular-ai-platform/</guid>
       <description>Developed a flexible, modular platform that combines the power of modern LLMs with robust backend infrastructure, enabling rapid prototyping and deployment of AI applications.</description>
     </item>
   </channel>

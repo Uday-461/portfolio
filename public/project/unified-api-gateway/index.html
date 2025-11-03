@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.152.1">
+<title>Unified AI API Gateway | Uday | Portfolio</title>
+
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="Multi-provider AI gateway with credit-based billing and MCP support">
+
+
+<meta property="og:site_name" content="Uday | Portfolio">
+<meta property="og:title" content="Unified AI API Gateway | Uday | Portfolio">
+<meta property="og:description" content="Multi-provider AI gateway with credit-based billing and MCP support" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="https://udaydahiya.org/project/unified-api-gateway/" />
+<meta property="og:locale" content="en-us">
+
+
+
+
+    
+        <meta property="og:image" content="https://udaydahiya.org/img/uday_linkedin.jpeg" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://udaydahiya.org/img/uday_linkedin.jpeg" >
+    
+  
+  <meta itemprop="name" content="Unified AI API Gateway">
+  <meta itemprop="description" content="Built an edge-native API gateway that unifies multiple AI providers, implements usage-based billing through a credit system, and supports Model Context Protocol for advanced AI applications.">
+  <meta itemprop="datePublished" content="2025-09-20T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-09-20T00:00:00+00:00">
+  <meta itemprop="wordCount" content="873">
+  <meta itemprop="keywords" content="Zuplo,TypeScript,API Gateway,AI Services,Edge Computing">
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.6fd5894c037c33653c04adc7fba0e5e3407a6e9fc3ac743ec566de299d8b0387.css" integrity="sha256-b9WJTAN8M2U8BK3H&#43;6Dl40B6bp/DrHQ&#43;xWbeKZ2LA4c=" media="screen">
+  
+  
+  <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.1fe76f09cacb3923b174c92c7929a66a989457f6569a9356f7a693ae312b964a.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="https://udaydahiya.org/" title="Home">
+      <span class="f4 fw7">Uday | Portfolio</span>
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/" title="Home">Home</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/project/" title="Projects">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/reads/" title="Reads">Reads</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/post/" title="Blog">Blog</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Unified AI API Gateway</h1>
+        <h4 class="f4 mt0 mb4 lh-title measure">Multi-provider AI gateway with credit-based billing and MCP support</h4>
+        <p class="f6 measure lh-copy mv1">By Uday in <a href="https://udaydahiya.org/categories/infrastructure">Infrastructure</a>  <a href="https://udaydahiya.org/categories/api-development">API Development</a>  <a href="https://udaydahiya.org/categories/ai-integration">AI Integration</a> </p>
+        <p class="f7 db mv0 ttu">September 20, 2025</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        <p><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&amp;h=400&amp;fit=crop" alt=""></p>
+<div class="project-highlights">
+  <div class="highlight-stat">
+    <span class="stat-number">30-50%</span>
+    <span class="stat-label">AI cost reduction</span>
+  </div>
+  <div class="highlight-stat">
+    <span class="stat-number">99.99%</span>
+    <span class="stat-label">Availability with failover</span>
+  </div>
+  <div class="highlight-stat">
+    <span class="stat-number">300+</span>
+    <span class="stat-label">Global edge locations</span>
+  </div>
+</div>
+
+
+
+
+<h2 id="the-challenge">The Challenge
+  <a href="#the-challenge"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Organizations adopting AI face critical infrastructure challenges:</p>
+<ul>
+<li><strong>Vendor lock-in</strong>: Dependency on a single AI provider creates risk</li>
+<li><strong>Cost unpredictability</strong>: No usage controls or cost attribution</li>
+<li><strong>Complex integration</strong>: Each provider has different APIs and formats</li>
+<li><strong>No monetization path</strong>: SaaS companies can&rsquo;t bill for AI usage</li>
+<li><strong>Performance issues</strong>: Variable latency based on provider location</li>
+</ul>
+
+
+
+
+<h2 id="the-solution">The Solution
+  <a href="#the-solution"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Built an enterprise-grade API gateway that:</p>
+<ul>
+<li><strong>Unifies multiple AI providers</strong> behind a single API endpoint</li>
+<li><strong>Implements credit-based billing</strong> for usage tracking and monetization</li>
+<li><strong>Provides intelligent routing</strong> to optimize for cost, latency, or availability</li>
+<li><strong>Supports Model Context Protocol (MCP)</strong> for advanced AI workflows</li>
+<li><strong>Deploys globally</strong> on edge network for sub-100ms latency</li>
+</ul>
+
+
+
+
+<h3 id="architecture">Architecture
+  <a href="#architecture"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<pre tabindex="0"><code>Client Application
+  ↓
+[Edge Gateway - 300+ Locations]
+  ↓
+Authentication Policy
+  → Validate API Key
+  → Load User Context
+  ↓
+Credit Balance Check
+  → Calculate Request Cost
+  → Verify Balance
+  ↓
+Rate Limit Enforcement
+  → Apply Throttling
+  ↓
+AI Service Router
+  → Select Provider (cost/latency/availability)
+  → Transform Request
+  ↓
+[OpenAI | Anthropic | Google | Custom Models]
+  ↓
+Response Handler
+  → Normalize Format
+  → Deduct Credits
+  → Log Metrics
+  ↓
+Client Response
+</code></pre><p><strong>Tech Stack</strong>: Zuplo (Edge Platform), TypeScript, Redis (credit ledger), PostgreSQL (audit logs)</p>
+
+
+
+
+<h2 id="key-features">Key Features
+  <a href="#key-features"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="multi-provider-ai-integration">Multi-Provider AI Integration
+  <a href="#multi-provider-ai-integration"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p><strong>Supported Providers</strong>:</p>
+<ul>
+<li>OpenAI (GPT-3.5, GPT-4, Embeddings)</li>
+<li>Anthropic (Claude)</li>
+<li>Google (Gemini)</li>
+<li>Custom model endpoints</li>
+</ul>
+<p><strong>Intelligent Routing</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#cf222e">async</span> <span style="color:#cf222e">function</span> <span style="color:#1f2328">selectProvider</span><span style="color:#1f2328">(</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">request</span>: <span style="color:#cf222e">AIRequest</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">constraints</span>: <span style="color:#cf222e">RoutingConstraints</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">)</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">Promise</span><span style="color:#1f2328">&lt;</span><span style="color:#0550ae">AIProvider</span><span style="color:#1f2328">&gt;</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">const</span> <span style="color:#1f2328">providers</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">await</span> <span style="color:#1f2328">getAvailableProviders</span><span style="color:#1f2328">(</span><span style="color:#1f2328">request</span><span style="color:#1f2328">.</span><span style="color:#1f2328">model</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#57606a">// Cost-optimized routing
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#cf222e">if</span> <span style="color:#1f2328">(</span><span style="color:#1f2328">constraints</span><span style="color:#1f2328">.</span><span style="color:#1f2328">preferCost</span><span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#1f2328">providers</span><span style="color:#1f2328">.</span><span style="color:#1f2328">sort</span><span style="color:#1f2328">((</span><span style="color:#1f2328">a</span><span style="color:#1f2328">,</span> <span style="color:#1f2328">b</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">=&gt;</span> <span style="color:#1f2328">a</span><span style="color:#1f2328">.</span><span style="color:#1f2328">cost</span> <span style="color:#0550ae">-</span> <span style="color:#1f2328">b</span><span style="color:#1f2328">.</span><span style="color:#1f2328">cost</span><span style="color:#1f2328">)[</span><span style="color:#0550ae">0</span><span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#57606a">// Latency-optimized routing
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#cf222e">if</span> <span style="color:#1f2328">(</span><span style="color:#1f2328">constraints</span><span style="color:#1f2328">.</span><span style="color:#1f2328">preferSpeed</span><span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#1f2328">providers</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#1f2328">.</span><span style="color:#1f2328">filter</span><span style="color:#1f2328">(</span><span style="color:#1f2328">p</span> <span style="color:#0550ae">=&gt;</span> <span style="color:#1f2328">p</span><span style="color:#1f2328">.</span><span style="color:#1f2328">availability</span> <span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">0.99</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#1f2328">.</span><span style="color:#1f2328">sort</span><span style="color:#1f2328">((</span><span style="color:#1f2328">a</span><span style="color:#1f2328">,</span> <span style="color:#1f2328">b</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">=&gt;</span> <span style="color:#1f2328">a</span><span style="color:#1f2328">.</span><span style="color:#1f2328">latency</span> <span style="color:#0550ae">-</span> <span style="color:#1f2328">b</span><span style="color:#1f2328">.</span><span style="color:#1f2328">latency</span><span style="color:#1f2328">)[</span><span style="color:#0550ae">0</span><span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#57606a">// Weighted score: availability (40%) + speed (30%) + cost (20%) + quota (10%)
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#cf222e">return</span> <span style="color:#1f2328">providers</span><span style="color:#1f2328">.</span><span style="color:#1f2328">sort</span><span style="color:#1f2328">((</span><span style="color:#1f2328">a</span><span style="color:#1f2328">,</span> <span style="color:#1f2328">b</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">=&gt;</span> <span style="color:#1f2328">calculateScore</span><span style="color:#1f2328">(</span><span style="color:#1f2328">b</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">-</span> <span style="color:#1f2328">calculateScore</span><span style="color:#1f2328">(</span><span style="color:#1f2328">a</span><span style="color:#1f2328">))[</span><span style="color:#0550ae">0</span><span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span></code></pre></div>
+
+
+
+<h3 id="credit-based-billing-system">Credit-Based Billing System
+  <a href="#credit-based-billing-system"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p><strong>Credit Calculation</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#cf222e">interface</span> <span style="color:#1f2328">CreditCost</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">baseRate</span>: <span style="color:#cf222e">number</span><span style="color:#1f2328">;</span>        <span style="color:#57606a">// Credits per 1K tokens
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#1f2328">modelMultiplier</span>: <span style="color:#cf222e">number</span><span style="color:#1f2328">;</span> <span style="color:#57606a">// GPT-4: 2x, GPT-3.5: 1x
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#1f2328">regionSurcharge</span>: <span style="color:#cf222e">number</span><span style="color:#1f2328">;</span> <span style="color:#57606a">// Geographic pricing
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#1f2328">priorityBonus</span>: <span style="color:#cf222e">number</span><span style="color:#1f2328">;</span>   <span style="color:#57606a">// Premium tier multiplier
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">function</span> <span style="color:#1f2328">calculateCredits</span><span style="color:#1f2328">(</span><span style="color:#1f2328">request</span>: <span style="color:#cf222e">AIRequest</span><span style="color:#1f2328">)</span><span style="color:#0550ae">:</span> <span style="color:#cf222e">number</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">const</span> <span style="color:#1f2328">estimatedTokens</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">estimateTokens</span><span style="color:#1f2328">(</span><span style="color:#1f2328">request</span><span style="color:#1f2328">.</span><span style="color:#1f2328">prompt</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">const</span> <span style="color:#1f2328">baseCost</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">(</span><span style="color:#1f2328">estimatedTokens</span> <span style="color:#0550ae">/</span> <span style="color:#0550ae">1000</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">*</span> <span style="color:#1f2328">CREDIT_RATES</span><span style="color:#1f2328">[</span><span style="color:#1f2328">model</span><span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">const</span> <span style="color:#1f2328">regionCost</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">baseCost</span> <span style="color:#0550ae">*</span> <span style="color:#1f2328">REGION_MULTIPLIERS</span><span style="color:#1f2328">[</span><span style="color:#1f2328">region</span><span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">return</span> <span style="color:#6639ba">Math</span><span style="color:#1f2328">.</span><span style="color:#1f2328">ceil</span><span style="color:#1f2328">(</span><span style="color:#1f2328">regionCost</span> <span style="color:#0550ae">*</span> <span style="color:#1f2328">PRIORITY_TIERS</span><span style="color:#1f2328">[</span><span style="color:#1f2328">tier</span><span style="color:#1f2328">]);</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span></code></pre></div><p><strong>Features</strong>:</p>
+<ul>
+<li>Real-time credit balance tracking (Redis)</li>
+<li>Atomic debit/credit operations (Lua scripts)</li>
+<li>Transaction audit trail (PostgreSQL)</li>
+<li>Usage analytics and reports</li>
+<li>Quota management per user/team</li>
+</ul>
+
+
+
+
+<h3 id="model-context-protocol-mcp-support">Model Context Protocol (MCP) Support
+  <a href="#model-context-protocol-mcp-support"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p><strong>Protocol Handler</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#cf222e">interface</span> <span style="color:#1f2328">MCPRequest</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">method</span>: <span style="color:#cf222e">string</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">params</span>: <span style="color:#cf222e">Record</span><span style="color:#1f2328">&lt;</span><span style="color:#0550ae">string</span><span style="color:#1f2328">,</span> <span style="color:#1f2328">any</span><span style="color:#1f2328">&gt;;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">context?</span>: <span style="color:#cf222e">ConversationContext</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">MCPGateway</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">async</span> <span style="color:#1f2328">handleRequest</span><span style="color:#1f2328">(</span><span style="color:#1f2328">request</span>: <span style="color:#cf222e">MCPRequest</span><span style="color:#1f2328">)</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">Promise</span><span style="color:#1f2328">&lt;</span><span style="color:#0550ae">MCPResponse</span><span style="color:#1f2328">&gt;</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">// Route to appropriate MCP tool
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">const</span> <span style="color:#1f2328">tool</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">this</span><span style="color:#1f2328">.</span><span style="color:#1f2328">resolveTool</span><span style="color:#1f2328">(</span><span style="color:#1f2328">request</span><span style="color:#1f2328">.</span><span style="color:#1f2328">method</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">// Maintain context state
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">const</span> <span style="color:#1f2328">context</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">await</span> <span style="color:#cf222e">this</span><span style="color:#1f2328">.</span><span style="color:#1f2328">loadContext</span><span style="color:#1f2328">(</span><span style="color:#1f2328">request</span><span style="color:#1f2328">.</span><span style="color:#1f2328">context</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">// Execute with context
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">return</span> <span style="color:#cf222e">await</span> <span style="color:#1f2328">tool</span><span style="color:#1f2328">.</span><span style="color:#1f2328">execute</span><span style="color:#1f2328">(</span><span style="color:#1f2328">request</span><span style="color:#1f2328">.</span><span style="color:#1f2328">params</span><span style="color:#1f2328">,</span> <span style="color:#1f2328">context</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span></code></pre></div><p><strong>Capabilities</strong>:</p>
+<ul>
+<li>Context persistence across requests</li>
+<li>Tool routing to appropriate handlers</li>
+<li>State management for conversations</li>
+<li>Integration with MCP servers</li>
+</ul>
+
+
+
+
+<h3 id="advanced-security--monitoring">Advanced Security &amp; Monitoring
+  <a href="#advanced-security--monitoring"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p><strong>Policy Pipeline</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#cf222e">export</span> <span style="color:#cf222e">class</span> <span style="color:#1f2328">PolicyPipeline</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">private</span> <span style="color:#1f2328">policies</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">new</span> <span style="color:#1f2328">AuthenticationPolicy</span><span style="color:#1f2328">(),</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">new</span> <span style="color:#1f2328">CreditCheckPolicy</span><span style="color:#1f2328">(),</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">new</span> <span style="color:#1f2328">RateLimitPolicy</span><span style="color:#1f2328">(),</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">new</span> <span style="color:#1f2328">RoutingPolicy</span><span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">async</span> <span style="color:#1f2328">execute</span><span style="color:#1f2328">(</span><span style="color:#1f2328">request</span>: <span style="color:#cf222e">ZuploRequest</span><span style="color:#1f2328">)</span><span style="color:#0550ae">:</span> <span style="color:#1f2328">Promise</span><span style="color:#1f2328">&lt;</span><span style="color:#0550ae">Response</span><span style="color:#1f2328">&gt;</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">let</span> <span style="color:#1f2328">context</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">new</span> <span style="color:#1f2328">ExecutionContext</span><span style="color:#1f2328">(</span><span style="color:#1f2328">request</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span> <span style="color:#1f2328">(</span><span style="color:#cf222e">const</span> <span style="color:#1f2328">policy</span> <span style="color:#cf222e">of</span> <span style="color:#cf222e">this</span><span style="color:#1f2328">.</span><span style="color:#1f2328">policies</span><span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cf222e">const</span> <span style="color:#1f2328">result</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">await</span> <span style="color:#1f2328">policy</span><span style="color:#1f2328">.</span><span style="color:#1f2328">run</span><span style="color:#1f2328">(</span><span style="color:#1f2328">context</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cf222e">if</span> <span style="color:#1f2328">(</span><span style="color:#1f2328">result</span><span style="color:#1f2328">.</span><span style="color:#1f2328">shouldTerminate</span><span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#1f2328">result</span><span style="color:#1f2328">.</span><span style="color:#1f2328">response</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#1f2328">context</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">result</span><span style="color:#1f2328">.</span><span style="color:#1f2328">updatedContext</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#cf222e">await</span> <span style="color:#cf222e">this</span><span style="color:#1f2328">.</span><span style="color:#1f2328">forwardToProvider</span><span style="color:#1f2328">(</span><span style="color:#1f2328">context</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span></code></pre></div><p><strong>Security Features</strong>:</p>
+<ul>
+<li>API key authentication</li>
+<li>Request validation and sanitization</li>
+<li>Comprehensive audit logging</li>
+<li>Rate limiting per user/key</li>
+<li>CORS configuration</li>
+</ul>
+
+
+
+
+<h3 id="failover--reliability">Failover &amp; Reliability
+  <a href="#failover--reliability"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p><strong>Circuit Breaker Pattern</strong>:</p>
+<ul>
+<li>Opens after 5 consecutive failures</li>
+<li>Exponential backoff retry (100ms → 200ms → 400ms)</li>
+<li>Fallback chain: Primary → Secondary → Tertiary</li>
+<li>Health checks every 30 seconds</li>
+<li>Sub-1 second failover recovery</li>
+</ul>
+
+
+
+
+<h2 id="business-impact">Business Impact
+  <a href="#business-impact"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="cost-optimization">Cost Optimization
+  <a href="#cost-optimization"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>30-50% lower AI costs</strong> through intelligent provider routing</li>
+<li><strong>Elimination of waste</strong> via real-time quota enforcement</li>
+<li><strong>Predictable budgeting</strong> with credit-based system</li>
+<li><strong>No over-provisioning</strong> - pay for actual usage</li>
+</ul>
+
+
+
+
+<h3 id="revenue-generation">Revenue Generation
+  <a href="#revenue-generation"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>New revenue stream</strong>: Monetize AI features with usage billing</li>
+<li><strong>Flexible pricing</strong>: Tiered credit packages</li>
+<li><strong>Transparent billing</strong>: Detailed usage reports</li>
+<li><strong>Upsell opportunities</strong>: Analytics show high-value users</li>
+</ul>
+
+
+
+
+<h3 id="operational-efficiency">Operational Efficiency
+  <a href="#operational-efficiency"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>85% faster integration</strong>: Single API vs. 3-5 providers</li>
+<li><strong>Zero vendor migration time</strong>: Switch providers without code changes</li>
+<li><strong>Reduced DevOps burden</strong>: Centralized configuration</li>
+<li><strong>Faster time-to-market</strong>: Deploy AI features in hours</li>
+</ul>
+
+
+
+
+<h3 id="risk-mitigation">Risk Mitigation
+  <a href="#risk-mitigation"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>99.99% availability</strong>: Multi-provider failover</li>
+<li><strong>Instant provider switching</strong>: Respond to outages immediately</li>
+<li><strong>Complete audit trail</strong>: Compliance-ready logging</li>
+<li><strong>Centralized security</strong>: Single access control point</li>
+</ul>
+
+
+
+
+<h2 id="technical-implementation">Technical Implementation
+  <a href="#technical-implementation"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="edge-computing-infrastructure">Edge Computing Infrastructure
+  <a href="#edge-computing-infrastructure"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li><strong>300+ edge locations</strong>: Global distribution</li>
+<li><strong>Sub-100ms latency</strong>: Geographic routing</li>
+<li><strong>Auto-scaling</strong>: 0 to millions of requests/sec</li>
+<li><strong>No cold starts</strong>: Always-on edge workers</li>
+</ul>
+
+
+
+
+<h3 id="modular-architecture">Modular Architecture
+  <a href="#modular-architecture"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<pre tabindex="0"><code>config/
+  ├── routes.json          # API route definitions
+  ├── environments/        # Dev/staging/prod configs
+  └── services.json        # Provider endpoints
+
+modules/
+  ├── credit-calculator.ts # Credit calculation logic
+  ├── auth-handler.ts      # Authentication
+  └── service-router.ts    # Provider selection
+
+policies/
+  ├── auth-policy.ts       # API key validation
+  ├── credit-policy.ts     # Balance checking
+  ├── rate-limit.ts        # Request throttling
+  └── response-transform.ts # Format normalization
+</code></pre>
+
+
+
+<h3 id="data-storage">Data Storage
+  <a href="#data-storage"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p><strong>Redis (Credit Ledger)</strong>:</p>
+<ul>
+<li>Real-time balance tracking</li>
+<li>60-second cache per user</li>
+<li>Atomic operations via Lua scripts</li>
+</ul>
+<p><strong>PostgreSQL (Audit Trail)</strong>:</p>
+<ul>
+<li>Transaction history</li>
+<li>Usage analytics</li>
+<li>Compliance reports</li>
+</ul>
+
+
+
+
+<h2 id="use-cases">Use Cases
+  <a href="#use-cases"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="for-enterprises">For Enterprises
+  <a href="#for-enterprises"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li>Transform AI from cost center to profit center</li>
+<li>Democratize AI access with quotas</li>
+<li>Data-driven provider selection</li>
+<li>Compliance assurance</li>
+</ul>
+
+
+
+
+<h3 id="for-saas-companies">For SaaS Companies
+  <a href="#for-saas-companies"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li>Launch AI features without custom billing</li>
+<li>Experiment with multiple providers risk-free</li>
+<li>Scale without engineering bottlenecks</li>
+<li>Competitive differentiation</li>
+</ul>
+
+
+
+
+<h3 id="for-agencies">For Agencies
+  <a href="#for-agencies"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<ul>
+<li>White-labeled AI services</li>
+<li>Accurate client billing</li>
+<li>Multi-client project management</li>
+<li>ROI demonstration</li>
+</ul>
+
+
+
+
+<h2 id="performance-metrics">Performance Metrics
+  <a href="#performance-metrics"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<ul>
+<li><strong>Request latency</strong>: &lt;100ms P95</li>
+<li><strong>Throughput</strong>: Millions of requests/sec</li>
+<li><strong>Availability</strong>: 99.99% uptime</li>
+<li><strong>Failover time</strong>: &lt;1 second</li>
+<li><strong>Cost savings</strong>: 30-50% vs direct API usage</li>
+</ul>
+<hr>
+<p><em>Building scalable AI infrastructure through intelligent gateway architecture</em></p>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">September 20, 2025</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">5 minute read, 873 words</dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Categories:</dt>
+    <dd class="fw5 ml0"> <a href="https://udaydahiya.org/categories/infrastructure">Infrastructure</a>  <a href="https://udaydahiya.org/categories/api-development">API Development</a>  <a href="https://udaydahiya.org/categories/ai-integration">AI Integration</a> </dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Tags:</dt>
+    <dd class="fw5 ml0"> <a href="https://udaydahiya.org/tags/zuplo">Zuplo</a>  <a href="https://udaydahiya.org/tags/typescript">TypeScript</a>  <a href="https://udaydahiya.org/tags/api-gateway">API Gateway</a>  <a href="https://udaydahiya.org/tags/ai-services">AI Services</a>  <a href="https://udaydahiya.org/tags/edge-computing">Edge Computing</a> </dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+    <dd class="fw5 ml0"><a href="/project/vendor-job-marketplace/">Vendor-Job Marketplace Platform</a></dd>
+    
+    <dd class="fw5 ml0"><a href="/project/hr-vendor-portal/">HR Vendor Management Portal</a></dd>
+    
+    <dd class="fw5 ml0"><a href="/project/modular-ai-platform/">Modular AI Platform with Supabase &amp; Hugging Face</a></dd>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="https://udaydahiya.org/project/api-key-management/">Enterprise API Key Management System &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2025
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/Uday-461" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.linkedin.com/in/uday-dahiya-59001113b/" title="linkedin" target="_blank" rel="me noopener">
+      <i class="fab fa-linkedin fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="https://github.com/Uday-461" title="GitHub">GitHub</a>
+      
+    </div>
+  </nav>
+  
+</footer>
+
+      </div>
+    </body>
+</html>
